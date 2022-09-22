@@ -5,7 +5,8 @@ date: "`r Sys.Date()`"
 output: 
   github_document:
     toc: true
-  pdf_document
+  pdf_document:
+    toc: false
 ---
 
 ```{r setup, eval=TRUE, results='hide', echo=FALSE}
