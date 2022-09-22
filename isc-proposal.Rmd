@@ -2,7 +2,10 @@
 title: "Supporto the Quarto"
 author: "Zhian N. Kamvar"
 date: "`r Sys.Date()`"
-output: github_document
+output: 
+  github_document:
+    toc: true
+  pdf_document
 ---
 
 ```{r setup, eval=TRUE, results='hide', echo=FALSE}
