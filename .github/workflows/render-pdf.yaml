@@ -31,6 +31,7 @@ jobs:
           RMD_PATH="isc-proposal.Rmd"
           Rscript -e 'for (f in commandArgs(TRUE)) if (file.exists(f)) rmarkdown::render(f, rmarkdown::pdf_document)' ${RMD_PATH[*]}
       - name: Upload Artifact
+        uses: actions/upload-artifact@v3
         with: 
           name: proposal
           path: isc-proposal.pdf
