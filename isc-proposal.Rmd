@@ -1,5 +1,5 @@
 ---
-title: "Supporto the quarto"
+title: "Supporto the Quarto"
 author: "Zhian N. Kamvar"
 date: "`r Sys.Date()`"
 output: github_document
