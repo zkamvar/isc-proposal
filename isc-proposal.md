@@ -4,6 +4,7 @@ Supporto the Quarto
 Zhian N. Kamvar
 2022-09-22
 
+-   [NOTES](#notes)
 -   [Signatories](#signatories)
     -   [Project team](#project-team)
     -   [Contributors](#contributors)
@@ -28,6 +29,27 @@ Zhian N. Kamvar
     -   [Future work](#future-work)
     -   [Key risks](#key-risks)
 
+
+## NOTES
+
+These are notes from talking with Yanina about [my twitter thread](https://twitter.com/ZKamvar/status/1573363038669111298?s=20&t=fhQlFMOf1AuH2baVbjvsCQ)
+
+lessons that are not in R can use this infrastructure <- this is a good pitch
+
+The fact that The Carpentries has high impact for larger communities. 
+
+Proposals like this have a good chance. 
+
+Try to highlight a tool for people who want to create training materials with the carpentries philosophy
+
+lesson will have evidence-based teaching practices. 
+
+we are providing tools to make it easier. No expertise on GitHub Actions, Quarto, Yaml needed.
+
+Highlight that The Carpentries materials are used in other places. 
+
+
+
 ## Signatories
 
 <!-- 
@@ -42,6 +64,9 @@ An optional section would be for R-Core signatories where changes to R are propo
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
 Zhian N. Kamvar - Lead Developer
+Toby Hodges - Community Advocate
+Kari L. Jordan - Supervisor
+
 
 ### Contributors
 
@@ -112,7 +137,12 @@ Only R lessons have the ability to dynamically generate output, tables, and figu
 Lessons that demonstrate the shell, SQL, Make, Python, and other languages have output, tables, and figures manually copy and pasted by hand.
 This manual process creates a bottleneck in lesson development that can lead to spurious errors and increases barriers to adoption.
 
-With the advent of Quarto, which uses a similar two-step model for rendering documents, we propose to replace the underlying engines for rendering our websites from a {knitr}/pandoc-based approach to one that takes advantage of Quartos polyglot features. 
+With the advent of Quarto, which uses a similar two-step model for rendering documents, we propose to replace the underlying engines for rendering our websites from a {knitr}/pandoc-based approach to one that takes advantage of Quarto's polyglot features. 
+
+We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment.
+Because the Carpentries Materials are always open-source, may organisations have used and remixed our infrastructure for their own purposes.
+By incorporating Quarto, we will be able increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons.
+This will in turn help train future generations of researchers to work reproducibly.
 
 
 ### Detail
@@ -243,3 +273,8 @@ What sort of things could come up that can delay or break the project?
  - [ ] Costs
 
 -->
+
+People: Zhian is currently the sole developer of the workbench. His time is a bottleneck
+
+Costs: none; only time.
+
