@@ -106,7 +106,7 @@ We want to replace our {knitr} and {pkgdown} engines to use {quarto} so that peo
 ### Stakeholders
 
 This will most immediately affect lesson maintainers and developers of non-R lessons by reducing the amount of manual validation needed. 
-It will secondarily affect learners and instructors who will benefit from more up-to-date material. 
+It will secondarily affect learners and instructors who will benefit from new and more up-to-date lessons. 
 
 ### Previous Attempts
 
