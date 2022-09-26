@@ -48,6 +48,32 @@ we are providing tools to make it easier. No expertise on GitHub Actions, Quarto
 
 Highlight that The Carpentries materials are used in other places. 
 
+> The primary purpose of the R Consortium (collectively, the “Purpose”) is to: 
+>
+>(a) advance the worldwide promotion of and support for the R open source
+>language and environment as the preferred language for statistical computing
+>and graphics (the “Environment”);
+>
+>(b) establish, maintain, seek support for, and develop infrastructure projects
+>and technical and infrastructure collaboration initiatives related to the
+>Environment, and such other initiatives as may be appropriate to support,
+>enable and promote the Environment; 
+>
+>(c) encourage and increase user adoption, involvement with, and contribution
+>to, the Environment; 
+>
+>(d) facilitate communication and collaboration among users and developers of
+>the Environment, the R Consortium and the R Foundation for Statistical
+>Computing (the “R Foundation”); 
+>
+>(e) support and maintain policies set by the Board; and 
+>
+>(f) undertake such other activities as may from time to time be appropriate to
+>further the purposes and achieve the goals set forth above.  
+>
+>In furtherance of these efforts, the R Consortium shall seek to solicit the
+>participation of all interested parties on a fair, equitable and open basis.
+>*[R Consortium Bylaws, Section 1.4](https://bylaws.r-consortium.org)*
 
 
 ## Signatories
@@ -80,6 +106,8 @@ Who are the people who have actively helped with this proposal but won't necessa
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
+Yanina Bellini Saibene
+
 ## The Problem
 
 <!-- 
@@ -95,26 +123,36 @@ It is important to cover:
 
 ### Problem Statement
 
-We host lessons in markdown and R Markdown. 
+Of all languages, R is the most versatile when it comes to literate programming and the ability to rapidly publish results thanks to the advent of R Markdown.
+More importantly, unlike JSON-based formats like Jupyter notebooks, R Markdown enables **reproducible collaboration** under version control.
+Literate programming also enables the creation of maintainable and reproducible teaching materials.
+To host such materials, however, requires not only expertise in a domain area, it also requires knowledge of continuous deployment systems, reproducible workflows, and UI elements for the Web.
+Designed with our Core Values in mind, The Carpentries lesson infrastructure provides templating, guidance, and tools that allows rapid development and publishing of high-quality lesson content.
+The lesson contributor only needs to focus on the writing the content of the lesson in Markdown or R Markdown.
+With this infrastructure, we champion community collaboration and access for all.
 
-In The Carpentries workbench, we use {knitr} to render R Markdown followed by {pkgdown} with mustache templating to render the lessons into websites.
+The infrstructure---called "The Carpentries" workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson.
+The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown followed by pandoc and {pkgdown} to render Markdown to HTML.
+For lessons that teach R, authoring R Markdown with a seamless integration with {renv} ensures that lessons are reproducible by default.
+Moreover, integration with GitHub Actions means that pull request previews can show lesson maintainers exactly where output in a lesson has changed from new contributions or package updates.
 
-Lessons that do not teach R are written in Markdown and output is copy and pasted into the lessons, making them difficult to maintain.
+Lessons that do not teach R, however, must use plain Markdown where the output of demonstrative and excercise code is copy and pasted into lessons.
+Copy and pasting outputs is inherently non-reproducible and makes non-R lessons difficult to maintain as the software ecosystem changes and evolves.
+Ultimately, these extra steps are significant burdens in a volunteer framework.
+These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.
 
-We want to replace our {knitr} and {pkgdown} engines to use {quarto} so that people can develop lessons using any engine avaialable in a jupyter kernel, meeting people where they are. 
+There have been attempts in The Carpentries community to create work-arounds to this problem.
+Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as [Intro to MRI Data in Python](https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2)), which is then used as the input for the lesson.
+This allows them to work in a framework that is comfortable for them, but it hampers collaboration because people who want to contribute may attempt to contribute to the markdown output, when they should be contributing to the notebooks.
 
-### Stakeholders
+Others, such as [the Learn To Discover group](https://github.com/LearnToDiscover/Basic_Python) have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear.
 
-This will most immediately affect lesson maintainers and developers of non-R lessons by reducing the amount of manual validation needed. 
-It will secondarily affect learners and instructors who will benefit from new and more up-to-date lessons. 
+In both cases, the lesson authors needed knowledge of continuous deployment, reproducible workflows, and of the underlying framework to accomplish their goals.
 
-### Previous Attempts
+We want our lesson infrastructure to live up to our values of people first, access for all, community collaboration, and strength through diversity. 
+We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto into The Carpentries Workbench.
+Released in July 2022, Quarto is a framework based the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.
 
-The Learn To Discover project has implemented python running via the {reticulate} package: <https://learntodiscover.github.io/Basic_Python/>
-
-### raison d'être
-
-Access for all. 
 
 ## The proposal
 
