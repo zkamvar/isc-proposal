@@ -153,6 +153,10 @@ We want our lesson infrastructure to live up to our values of people first, acce
 We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto into The Carpentries Workbench.
 Released in July 2022, Quarto is a framework based the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.
 
+We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment.
+Because the Carpentries Materials are always open-source, may organisations have used and remixed our infrastructure for their own purposes.
+By incorporating Quarto, we will be able increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons.
+This will in turn help train future generations of researchers to work reproducibly.
 
 ## The proposal
 
@@ -165,23 +169,19 @@ This is where the proposal should be outlined.
 <!--
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
-The Carpentries Workbench is a lesson publication system as a set of R packages that prioritises accessibility and sensible defaults to produce Carpentries and Carpentries style lessons.
-Moreover, we provide a non-invasive reproducible workflow based on {renv} in the background for lessons that use R Markdown sources.
-This ensures the lesson content is robust to sudden changes in the R package ecosystem.
-To build our lessons, we use a two-step workflow that first renders R Markdown to markdown with {knitr} and then parses that markdown into HTML with pandoc and {pkgdown}.
 
-While this approach works for both R Markdown and Markdown-based lessons, since 2016, there has been an inequity of literate programming in our lesson infrastructure. 
-Only R lessons have the ability to dynamically generate output, tables, and figures for their lessons.
-Lessons that demonstrate the shell, SQL, Make, Python, and other languages have output, tables, and figures manually copy and pasted by hand.
-This manual process creates a bottleneck in lesson development that can lead to spurious errors and increases barriers to adoption.
+We will enable support for reproducible publishing of non-R languages in The Carpentries Lesson Infrastructure by integrating the Quarto publishing engine into The Carpentries Workbench.
+The Carpentries Workbench is an opinionated lesson publication system as a set of R packages that prioritises accessibility and sensible defaults to produce Carpentries-styled lessons.
+With a modular foundation, The Carpentries Workbench uses a two-step workflow that first renders R Markdown to markdown via {knitr} followed by a step that uses Pandoc to render markdown to HTML templating.
+Because this is a similar model used by Quarto, we propose to replace the underlying engines from {knitr} + Pandoc to Quarto in our modular foundation without affecting the superstructure.
 
-With the advent of Quarto, which uses a similar two-step model for rendering documents, we propose to replace the underlying engines for rendering our websites from a {knitr}/pandoc-based approach to one that takes advantage of Quarto's polyglot features. 
 
-We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment.
-Because the Carpentries Materials are always open-source, may organisations have used and remixed our infrastructure for their own purposes.
-By incorporating Quarto, we will be able increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons.
-This will in turn help train future generations of researchers to work reproducibly.
+Our goal is to eliminate the barriers to contribution of lesson materials by increasing the number of lanugages available.
+Moreover, quarto will enable development of lessons demonstrating Python to R, Julia to R, or any other multi-lingual workflow.
+These multi-lingual lessons can demonstrate R's strengths in the context of another language and help promote R to people who would not have previously encountered R.
 
+By reducing barriers to contribution, more people will be empowered to create educational materials _based on The Carpentries philosophy_.
+These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve future problems. 
 
 ### Detail
 
@@ -190,10 +190,35 @@ Go into more detail about the specifics of the project and it delivers against t
 
 Depending on project type the detail section should include:
 
- - [ ] Minimum Viable Product
- - [ ] Architecture
+ - [x] Minimum Viable Product
+ - [x] Architecture
  - [ ] Assumptions
 -->
+
+### Minimum Viable Product
+
+The minimum viable product of this project will be:
+
+Support for `*.qmd` and files in The Carpentries Workbench
+: The Carpentries Workbench should treat any `*.qmd` files as valid input documents by default. Note that `*.ipynb` documents should first be converted to `*.qmd`.
+Quarto template for Carpentries-style lessons
+: This template will allow folks who want to create lessons without the workbench to take advantage of the styling.
+Documentation for non-R lessons
+: A Tutorial, How-to guide, Reference, and Explanation documents will help make clear the features and limitations of the quarto integration
+Blog Post
+: A blog post that summarises the feedback from our community members who maintain lessons in Python, BASH, and SQL.
+Unit, Integration, and Regression tests for Python, SQL, and BASH
+: These languages are the most common taught in our ecosystem and should have robust tests
+Non-invasive integration with Pyenv
+: Pyenv is the most common mechanism for defining requirements for a python project. We want to embed this to enable the same approach to reproducibility that we have for R lessons.
+
+Quarto itself will be implemented in the [{sandpaper}] package and the template will be implemented in [{varnish}]. 
+The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for [{sandpaper}].
+
+
+[{sandpaper}]: https://carpentries.github.io/sandpaper
+[{varnish}]: https://carpentries.github.io/varnish
+
 
 ## Project plan
 
