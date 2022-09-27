@@ -283,6 +283,14 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] ISC meetings
 -->
 
+As The Carpentries is a global community, we will continue to keep the community abreast of the updates happening with this project by using the communication channels available to us.
+This includes posting updates in the bi-monthly Dovetail blog post series, Carpentries Clippings, and hosting quarterly community discussions. 
+Beyond The Carpentries community, we will be posting things we learn along the way to the rOpenSci development corner [^pkg].
+We aim to present the results of this work at the UseR!, SciPy, RSE, and Open Education conferences in 2023.
+
+
+[^pkg]: An example from 2022-09: <https://ropensci.org/blog/2022/09/23/ropensci-news-digest-september-2022/#package-development-corner>
+
 ## Requirements
 
 <!-- 
@@ -294,6 +302,24 @@ An idea of what is required to make the project actually happen
 <!--
 Who needs to be involved, what's the proposed structure, what will it take to get their involvement?
 -->
+
+
+The Carpentries is a global community of 3,000+ trained volunteer instructors, who have taught workshops that have reached 85,000+ learners. 
+Our workshops teach introductory computing and data analytical skills to researchers. 
+R is taught in more than half of our workshops. 
+All the lessons materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors. 
+
+Zhian N. Kamvar is the Lesson Infrastructure Developer for The Carpentries and an experienced R developer with 8 authored packages on CRAN spanning reproducible research, population genetics, and epidemiology.
+He is responsible for designing and creating The Carpentries Workbench.
+He will lead the integration effort, blog post construction, as well as submission to conference proceedings.
+
+Toby Hodges is the Curriculum Team lead for The Carpentries and is an experienced community manager, having maintained community submissions to The Carpentries Incubator since 2020.
+He has designed and taught workshops that introduce The Workbench to audiences who are both experienced and new to The Carpentries.
+He will be responsible for developing high-level tutorials and setup documents for the new version of The Workbench that uses Quarto.
+
+Kari L. Jordan is the Executive Director for The Carpentries. 
+She has been involved with The Carpentries since 2016 and has been responsible for directing and coordinating the execution of our strategic plan since 2020.
+She is the direct supervisor of Zhian N. Kamvar and will provide oversight of the project.
 
 ### Processes
 
@@ -311,6 +337,11 @@ Will cloud computing be used - if yes are there are necessary components that wi
 Are there tools or tech that don't exist that will be produced to facilitate the project?
 -->
 
+All tools and technology are publicly and freely available for the project.
+Primary development is to take place on Zhian N. Kamvar's work computer, continuous integration on MacOS, Windows, and Ubuntu platforms will take place on GitHub actions.
+Provisioning and generation of components needed for dynamic lesson content will take place on GitHub actions.
+Blog posts will be hosted on The Carpentries website, hosted by AWS.
+
 ### Funding
 
 <!-- 
@@ -318,23 +349,30 @@ Are there tools or tech that don't exist that will be produced to facilitate the
 
 -->
 
-### Summary
-
-<!--
-A summary of the requirements that contextualises the costs
--->
+Funding for this project will go to support Zhian N. Kamvar and Toby Hodges' time to develop the infrastructure and documentation.
 
 ## Success
 
 <!-- 
 Projects should have a definition of done that is measurable, and a thorough understanding going in of what the risks are to delivery 
 -->
+Success for this project will happen when we have our Python lessons dynamically generate plots and output.
+Reaching this stage means that we have not only successfully implemented quarto into the workbench, but also have 
+
 
 ### Definition of done
 
 <!-- 
 What does success look like? 
 -->
+
+This project will be successful when:
+
+1. we are able to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.
+2. we have four levels of documentation: tutorial, how-to, discussion, and reference
+3. at least one maintainer from each python lesson is able to build the lesson locally
+
+**ZNK: I am confused by the difference between "Measuring Success" and "Definition of Done". These both seem to be extremely similar :/**
 
 ### Measuring success
 
@@ -348,6 +386,9 @@ How will we know when success is achieved, what markers can we use along the way
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
+Future work for this would be to examine the dependency provisioning structure for the workbench and generalising it for more languages.
+Moreover, ports of The Workbench to other languages can help lesson developers who simply do not wish to use R as an interface.
+
 ### Key risks
 
 <!-- 
@@ -360,7 +401,13 @@ What sort of things could come up that can delay or break the project?
 
 -->
 
-People: Zhian is currently the sole developer of the workbench. His time is a bottleneck
+Some key risks that could delay the project would be:
 
-Costs: none; only time.
+ - Significant changes to the pricing model or ethical standing of GitHub Actions, which The Carpentries uses heavily to dynamically deploy lessons. 
+   This is mitigated by ensuring that core deployment mechanisms in the R packages are agnostic to higher-level frameworks so that we can pivot to a different deploy system if needed.
+ - Lack of uptake by communities outside The Carpentries.
+   We will mitigate this by publicising our work early on and soliciting feedback from early adopters.
+ - Staffing shortages due to unanticipated circumstances (COVID, natural disaster, etc). <!-- ZNK: yes, I know this is Too Dark Park, but I _think_ it should be addressed -->
+   Addressing this will be taken via training core team and community members on how The Workbench works.
+
 
