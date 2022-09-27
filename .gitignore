@@ -16,3 +16,4 @@ vignettes/*.pdf
 # File gen artefacts
 *.html
 *.pdf
+*.docx
