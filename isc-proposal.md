@@ -142,16 +142,22 @@ Ultimately, these extra steps are significant burdens in a volunteer framework.
 These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.
 
 There have been attempts in The Carpentries community to create work-arounds to this problem.
-Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as [Intro to MRI Data in Python](https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2)), which is then used as the input for the lesson.
+Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as **Intro to MRI Data in Python**[^intro-mri]), which is then used as the input for the lesson.
 This allows them to work in a framework that is comfortable for them, but it hampers collaboration because people who want to contribute may attempt to contribute to the markdown output, when they should be contributing to the notebooks.
 
-Others, such as [the Learn To Discover group](https://github.com/LearnToDiscover/Basic_Python) have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear.
+[^intro-mri]: [github: carpentries-incubator/SDC-BIDS-IntroMRI](https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2)
+
+Others, such as the Learn To Discover group[^l2d] have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear.
+
+[^l2d]: [github: LearnToDiscover/BasicPython](https://github.com/LearnToDiscover/Basic_Python)
 
 In both cases, the lesson authors needed knowledge of continuous deployment, reproducible workflows, and of the underlying framework to accomplish their goals.
 
 We want our lesson infrastructure to live up to our values of people first, access for all, community collaboration, and strength through diversity. 
-We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto into The Carpentries Workbench.
+We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto[^quarto] into The Carpentries Workbench.
 Released in July 2022, Quarto is a framework based the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.
+
+[^quarto]: <https://quarto.org/>
 
 We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment.
 Because the Carpentries Materials are always open-source, may organisations have used and remixed our infrastructure for their own purposes.
@@ -223,13 +229,13 @@ Non-invasive integration with Pyenv
 
 : Pyenv is the most common mechanism for defining requirements for a python project. We want to embed this to enable the same approach to reproducibility that we have for R lessons.
 
-Quarto itself will be implemented in the [{sandpaper}] package and the template will be implemented in [{varnish}]. 
-The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for [{sandpaper}].
+Quarto itself will be implemented in the {sandpaper}[^sandpaper] package and the template will be implemented in {varnish}[^varnish]. 
+The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for {sandpaper}.
 
 We are assuming here that The Workbench will have wide acceptance 
 
-[{sandpaper}]: https://carpentries.github.io/sandpaper
-[{varnish}]: https://carpentries.github.io/varnish
+[^sandpaper]: <https://carpentries.github.io/sandpaper>
+[^varnish]: <https://carpentries.github.io/varnish>
 
 
 ## Project plan
@@ -247,7 +253,9 @@ Covering the planning phase, this section should provide a relatively detailed p
 
 The startup phase will be relatively light as the components for these features will live inside of established packages. 
 Licenses for this work will be MIT. 
-The reporting will be done publicly via bi-monthly blog post updates to The Carpentries Blog series ["The Dovetail"](https://carpentries.org/posts-by-tags/#blog-tag-dovetail).
+The reporting will be done publicly via bi-monthly blog post updates to The Carpentries Blog series "The Dovetail"[^dovetail]
+
+[^dovetail]: [link: blog posts tagged with "dovetail"](https://carpentries.org/posts-by-tags/#blog-tag-dovetail)
 
 ### Technical delivery
 
@@ -289,7 +297,7 @@ Beyond The Carpentries community, we will be posting things we learn along the w
 We aim to present the results of this work at the UseR!, SciPy, RSE, and Open Education conferences in 2023.
 
 
-[^pkg]: An example from 2022-09: <https://ropensci.org/blog/2022/09/23/ropensci-news-digest-september-2022/#package-development-corner>
+[^pkg]: [link: rOpenSci news digest 2022-09](https://ropensci.org/blog/2022/09/23/ropensci-news-digest-september-2022/#package-development-corner)
 
 ## Requirements
 
