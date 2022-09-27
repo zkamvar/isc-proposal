@@ -200,21 +200,33 @@ Depending on project type the detail section should include:
 The minimum viable product of this project will be:
 
 Support for `*.qmd` and files in The Carpentries Workbench
+
 : The Carpentries Workbench should treat any `*.qmd` files as valid input documents by default. Note that `*.ipynb` documents should first be converted to `*.qmd`.
+
 Quarto template for Carpentries-style lessons
+
 : This template will allow folks who want to create lessons without the workbench to take advantage of the styling.
+
 Documentation for non-R lessons
+
 : A Tutorial, How-to guide, Reference, and Explanation documents will help make clear the features and limitations of the quarto integration
+
 Blog Post
+
 : A blog post that summarises the feedback from our community members who maintain lessons in Python, BASH, and SQL.
+
 Unit, Integration, and Regression tests for Python, SQL, and BASH
+
 : These languages are the most common taught in our ecosystem and should have robust tests
+
 Non-invasive integration with Pyenv
+
 : Pyenv is the most common mechanism for defining requirements for a python project. We want to embed this to enable the same approach to reproducibility that we have for R lessons.
 
 Quarto itself will be implemented in the [{sandpaper}] package and the template will be implemented in [{varnish}]. 
 The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for [{sandpaper}].
 
+We are assuming here that The Workbench will have wide acceptance 
 
 [{sandpaper}]: https://carpentries.github.io/sandpaper
 [{varnish}]: https://carpentries.github.io/varnish
@@ -233,6 +245,10 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
+The startup phase will be relatively light as the components for these features will live inside of established packages. 
+Licenses for this work will be MIT. 
+The reporting will be done publicly via bi-monthly blog post updates to The Carpentries Blog series ["The Dovetail"](https://carpentries.org/posts-by-tags/#blog-tag-dovetail).
+
 ### Technical delivery
 
 <!--
@@ -241,11 +257,18 @@ Covering the actual delivery of the project this section should provide at least
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
 
-1. Replace {knitr} with {quarto} to achieve polyglot capabilities
-2. Harness pyenv to create non-invasive versioning system for python documents
-3. Create lua filters to replace XPath manipulation currently in {sandpaper}
-4. Replace Mustache templates with pandoc templates
-5. Release varnish as a quarto theme
+We have identified several steps to achieve our goals in roughly six months:
+
+- Week 1: Use tutorial-driven development to first document the typical workflow for a lessonthat does not use R. (1 week)
+- Weeks 2-3: Replace {knitr} with {quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities. (2 weeks)
+- Weeks 4-6: Harness pyenv to create non-invasive versioning system for python documents (3 weeks)
+- Weeks 5-9: Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows.
+- Weeks 10-11: Create lua filters to replace XPath manipulation currently in {sandpaper} (2 weeks)
+- Week 12: create pandoc templates (1 week)
+- Week 13: update varnish and `sandpaper:::build_html()` to use quarto pandoc templates <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some -->
+- Week 14-17: Test conversion on lesson infrastructure
+- Week 18: Release updated workbench and varnish as a quarto theme (1 week)
+- Week 19-24: remove outputs from python lessons, convert to quarto, validate, and release lessons.
 
 
 ### Other aspects
