@@ -40,11 +40,11 @@ The fact that The Carpentries has high impact for larger communities.
 
 Proposals like this have a good chance. 
 
-Try to highlight a tool for people who want to create training materials with the carpentries philosophy
+Try to highlight a tool for people who want to create training materials with The Carpentries philosophy
 
 lesson will have evidence-based teaching practices. 
 
-we are providing tools to make it easier. No expertise on GitHub Actions, Quarto, Yaml needed.
+we are providing tools to make it easier. No expertise on GitHub Actions, Quarto, YAML needed.
 
 Highlight that The Carpentries materials are used in other places. 
 
@@ -136,7 +136,7 @@ The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdow
 For lessons that teach R, authoring R Markdown with a seamless integration with {renv} ensures that lessons are reproducible by default.
 Moreover, integration with GitHub Actions means that pull request previews can show lesson maintainers exactly where output in a lesson has changed from new contributions or package updates.
 
-Lessons that do not teach R, however, must use plain Markdown where the output of demonstrative and excercise code is copy and pasted into lessons.
+Lessons that do not teach R, however, must use plain Markdown where the output of demonstrative and exercise code is copy and pasted into lessons.
 Copy and pasting outputs is inherently non-reproducible and makes non-R lessons difficult to maintain as the software ecosystem changes and evolves.
 Ultimately, these extra steps are significant burdens in a volunteer framework.
 These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.
@@ -317,7 +317,7 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 -->
 
 
-The Carpentries is a global community of 3,000+ trained volunteer instructors, who have taught workshops that have reached 85,000+ learners. 
+The Carpentries is a global community of 4,000+ trained volunteer instructors, who have taught workshops that have reached 90,000+ learners. 
 Our workshops teach introductory computing and data analytical skills to researchers. 
 R is taught in more than half of our workshops. 
 All the lessons materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors. 
