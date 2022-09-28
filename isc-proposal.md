@@ -131,7 +131,7 @@ Designed with our Core Values in mind, The Carpentries lesson infrastructure pro
 The lesson contributor only needs to focus on the writing the content of the lesson in Markdown or R Markdown.
 With this infrastructure, we champion community collaboration and access for all.
 
-The infrstructure---called "The Carpentries" workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson.
+The infrastructure---called The Carpentries Workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson.
 The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown followed by pandoc and {pkgdown} to render Markdown to HTML.
 For lessons that teach R, authoring R Markdown with a seamless integration with {renv} ensures that lessons are reproducible by default.
 Moreover, integration with GitHub Actions means that pull request previews can show lesson maintainers exactly where output in a lesson has changed from new contributions or package updates.
@@ -141,13 +141,20 @@ Copy and pasting outputs is inherently non-reproducible and makes non-R lessons 
 Ultimately, these extra steps are significant burdens in a volunteer framework.
 These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.
 
-There have been attempts in The Carpentries community to create work-arounds to this problem.
+The Carpentries teaches 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry. 
+Of these, only six teach skills using R. 
+In addition to the 30 other core Carpentries lessons that cannot take advantage of the benefits offered by R Markdown, 
+the community is also using The Carpentries open source infrastructure to develop and share their own lessons on a wide range of topics
+in The Carpentries Incubator.
+Some of these community-developed lessons teach skills using R, but most do not.
+
+There have been attempts in The Carpentries community to enable literate programming for lessons teaching with languages other than R.
 Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as **Intro to MRI Data in Python**[^intro-mri]), which is then used as the input for the lesson.
-This allows them to work in a framework that is comfortable for them, but it hampers collaboration because people who want to contribute may attempt to contribute to the markdown output, when they should be contributing to the notebooks.
+This allows the lead developers to work in a framework that offers the benefits of literate programming, but it hampers collaboration because the documentation for lesson infrastructure does not apply to this framework and people who want to contribute may attempt to edit the markdown output, when they should be contributing to the notebooks.
 
 [^intro-mri]: [github: carpentries-incubator/SDC-BIDS-IntroMRI](https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2)
 
-Others, such as the Learn To Discover group[^l2d] have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear.
+Others, such as the Learn To Discover group[^l2d] have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear, and the approach does not generally extend to enable literate programming in other languages.
 
 [^l2d]: [github: LearnToDiscover/BasicPython](https://github.com/LearnToDiscover/Basic_Python)
 
