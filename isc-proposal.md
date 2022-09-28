@@ -1,4 +1,4 @@
-Supporto the Quarto
+Multi-language Lessons in The Carpentries Workbench
 ================
 
 Zhian N. Kamvar
@@ -89,9 +89,9 @@ An optional section would be for R-Core signatories where changes to R are propo
 <!-- 
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
-Zhian N. Kamvar - Lead Developer
-Toby Hodges - Community Advocate
-Kari L. Jordan - Supervisor
+Dr. Zhian N. Kamvar---Lead Developer    
+Dr. Toby Hodges---Community Advocate     
+Dr. Kari L. Jordan---Supervisor    
 
 
 ### Contributors
@@ -106,7 +106,7 @@ Who are the people who have actively helped with this proposal but won't necessa
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-Yanina Bellini Saibene
+Dr. Yanina Bellini Saibene---R Consortium ISC member
 
 ## The Problem
 
@@ -141,12 +141,10 @@ Copy and pasting outputs is inherently non-reproducible and makes non-R lessons 
 Ultimately, these extra steps are significant burdens in a volunteer framework.
 These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.
 
-The Carpentries teaches 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry. 
-Of these, only six teach skills using R. 
-In addition to the 30 other core Carpentries lessons that cannot take advantage of the benefits offered by R Markdown, 
-the community is also using The Carpentries open source infrastructure to develop and share their own lessons on a wide range of topics
-in The Carpentries Incubator.
-Some of these community-developed lessons teach skills using R, but most do not.
+For context, The Carpentries teach 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry. 
+Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the "R for Ecologists" lesson alone from June to August 2022. 
+In addition, there are over 100 community-developed lessons on a wide range of topics in The Carpentries Incubator, 15 of which use R.
+This means that there are over one hundred lessons that potentially stand to benefit from literate programming.
 
 There have been attempts in The Carpentries community to enable literate programming for lessons teaching with languages other than R.
 Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as **Intro to MRI Data in Python**[^intro-mri]), which is then used as the input for the lesson.
@@ -371,29 +369,28 @@ Funding for this project will go to support Zhian N. Kamvar and Toby Hodges' tim
 <!-- 
 Projects should have a definition of done that is measurable, and a thorough understanding going in of what the risks are to delivery 
 -->
-Success for this project will happen when we have our Python lessons dynamically generate plots and output.
-Reaching this stage means that we have not only successfully implemented quarto into the workbench, but also have 
-
 
 ### Definition of done
 
 <!-- 
 What does success look like? 
 -->
-
-This project will be successful when:
-
-1. we are able to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.
-2. we have four levels of documentation: tutorial, how-to, discussion, and reference
-3. at least one maintainer from each python lesson is able to build the lesson locally
-
-**ZNK: I am confused by the difference between "Measuring Success" and "Definition of Done". These both seem to be extremely similar :/**
+Success for this project will happen when our core Python lessons are able dynamically generate plots and output. 
+Reaching this stage means that we have successfully implemented Quarto into The Workbench and documented the new functionality.
+We will also have modified all Python lessons in the core curriculum of our Lesson Programs to use Quarto and shown that the maintainers of these lessons are able to comfortably work with the infrastructure.
 
 ### Measuring success
 
 <!-- 
 How will we know when success is achieved, what markers can we use along the way 
 -->
+
+This project will be successful when:
+
+1. we are able to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.
+2. we have four levels of documentation: tutorial, how-to, discussion, and reference.
+3. at least one maintainer from each python lesson is able to build the lesson locally.
+4. at least one contribution to The Carpentries Incubator uses literate programming for a non-R lesson.
 
 ### Future work
 
