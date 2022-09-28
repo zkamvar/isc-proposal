@@ -165,8 +165,8 @@ Released in July 2022, Quarto is a framework based the same principles as R Mark
 [^quarto]: <https://quarto.org/>
 
 We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment.
-Because the Carpentries Materials are always open-source, may organisations have used and remixed our infrastructure for their own purposes.
-By incorporating Quarto, we will be able increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons.
+Because the Carpentries Materials are always open-source, many organisations have used and remixed our infrastructure for their own purposes.
+By incorporating Quarto, we will be able to increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons.
 This will in turn help train future generations of researchers to work reproducibly.
 
 ## The proposal
@@ -187,7 +187,7 @@ With a modular foundation, The Carpentries Workbench uses a two-step workflow th
 Because this is a similar model used by Quarto, we propose to replace the underlying engines from {knitr} + Pandoc to Quarto in our modular foundation without affecting the superstructure.
 
 
-Our goal is to eliminate the barriers to contribution of lesson materials by increasing the number of lanugages available.
+Our goal is to eliminate the barriers to contribution of lesson materials by increasing the number of langugages available.
 Moreover, quarto will enable development of lessons demonstrating Python to R, Julia to R, or any other multi-lingual workflow.
 These multi-lingual lessons can demonstrate R's strengths in the context of another language and help promote R to people who would not have previously encountered R.
 
@@ -228,7 +228,7 @@ Blog Post
 
 Unit, Integration, and Regression tests for Python, SQL, and BASH
 
-: These languages are the most common taught in our ecosystem and should have robust tests
+: These languages are the most commonly taught in our ecosystem and should have robust tests
 
 Non-invasive integration with Pyenv
 
@@ -320,7 +320,7 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 The Carpentries is a global community of 4,000+ trained volunteer instructors, who have taught workshops that have reached 90,000+ learners. 
 Our workshops teach introductory computing and data analytical skills to researchers. 
 R is taught in more than half of our workshops. 
-All the lessons materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors. 
+All the lesson materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors. 
 
 Zhian N. Kamvar is the Lesson Infrastructure Developer for The Carpentries and an experienced R developer with 8 authored packages on CRAN spanning reproducible research, population genetics, and epidemiology.
 He is responsible for designing and creating The Carpentries Workbench.
@@ -351,7 +351,7 @@ Are there tools or tech that don't exist that will be produced to facilitate the
 -->
 
 All tools and technology are publicly and freely available for the project.
-Primary development is to take place on Zhian N. Kamvar's work computer, continuous integration on MacOS, Windows, and Ubuntu platforms will take place on GitHub actions.
+Primary development is to take place on Zhian N. Kamvar's work computer, and continuous integration on MacOS, Windows, and Ubuntu platforms will take place on GitHub actions.
 Provisioning and generation of components needed for dynamic lesson content will take place on GitHub actions.
 Blog posts will be hosted on The Carpentries website, hosted by AWS.
 
@@ -375,7 +375,7 @@ Projects should have a definition of done that is measurable, and a thorough und
 <!-- 
 What does success look like? 
 -->
-Success for this project will happen when our core Python lessons are able dynamically generate plots and output. 
+Success for this project will happen when our core Python lessons are able to dynamically generate plots and output. 
 Reaching this stage means that we have successfully implemented Quarto into The Workbench and documented the new functionality.
 We will also have modified all Python lessons in the core curriculum of our Lesson Programs to use Quarto and shown that the maintainers of these lessons are able to comfortably work with the infrastructure.
 
@@ -398,7 +398,7 @@ This project will be successful when:
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
-Future work for this would be to examine the dependency provisioning structure for the workbench and generalising it for more languages.
+Future work for this would be to examine the dependency provisioning structure for the workbench and generalise it for more languages.
 Moreover, ports of The Workbench to other languages can help lesson developers who simply do not wish to use R as an interface.
 
 ### Key risks
