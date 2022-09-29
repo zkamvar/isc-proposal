@@ -340,12 +340,6 @@ Kari L. Jordan is the Executive Director for The Carpentries.
 She has been involved with The Carpentries since 2016 and has been responsible for directing and coordinating the execution of our strategic plan since 2020.
 She is the direct supervisor of Zhian N. Kamvar and will provide oversight of the project.
 
-### Processes
-
-<!-- 
-What processes need to be put in place e.g. codes of conduct, regular ISC meetings, handover to the community at large?
--->
-
 ### Tools & Tech
 
 <!--
@@ -361,6 +355,7 @@ Primary development is to take place on Zhian N. Kamvar's work computer, and con
 Provisioning and generation of components needed for dynamic lesson content will take place on GitHub actions.
 Blog posts will be hosted on The Carpentries website, hosted by AWS.
 
+
 ### Funding
 
 <!-- 
@@ -369,6 +364,13 @@ Blog posts will be hosted on The Carpentries website, hosted by AWS.
 -->
 
 Funding for this project will go to support Zhian N. Kamvar and Toby Hodges' time to develop the infrastructure and documentation.
+This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables:
+
+ - Initial development of core functionality (Weeks 1-6): 120 hours @ 78USD/hour: **9360USD**
+ - Development of quarto templates (Weeks 7-14): 180 hours @ 78/hour: **12480USD**
+ - Beta testing and deployment (Weeks 15-25): 220 hours @ 78/hour: **17160USD**
+
+Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: **39000USD**
 
 ## Success
 
