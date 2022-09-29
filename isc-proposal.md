@@ -272,16 +272,16 @@ Including target dates is really important as you need to be committed and the I
 
 We have identified several steps to achieve our goals in roughly six months:
 
-- Initial development of core functionality (Weeks 1-6): 120 hours @ 78USD/hour: 9360USD
+- Phase 1: Initial development of core functionality (6 weeks)
   - Week 1: Use tutorial-driven development to first document the typical workflow for a lesson that does not use R. (1 week)
   - Weeks 2-3: Replace {knitr} with {quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities. (2 weeks)
   - Weeks 4-6: Harness pyenv to create non-invasive versioning system for python documents (3 weeks)
-- Development of quarto templates (Weeks 7-14): 180 hours @ 78/hour: 12480USD
+- Phase 2: Development of quarto templates (8 weeks)
   - Weeks 7-10: Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows (4 weeks)
   - Weeks 11-12: Create lua filters to replace XPath manipulation currently in {sandpaper} (2 weeks)
   - Week 13: create pandoc templates (1 week) <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some -->
   - Week 14: update varnish and `sandpaper:::build_html()` to use quarto pandoc templates
-- Beta testing and deployment (Weeks 15-25): 220 hours @ 78/hour: 17160USD
+- Phase 3: Beta testing, conversion, and deployment (11 weeks)
   - Week 15-18: Test conversion on lesson infrastructure
   - Week 19: Release updated workbench and varnish as a quarto theme (1 week)
   - Week 20-25: remove outputs from python lessons, convert to quarto, validate, and release lessons.
@@ -366,9 +366,9 @@ Blog posts will be hosted on The Carpentries website, hosted by AWS.
 Funding for this project will go to support Zhian N. Kamvar and Toby Hodges' time to develop the infrastructure and documentation.
 This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables:
 
- - Initial development of core functionality (Weeks 1-6): 120 hours @ 78USD/hour: **9360USD**
- - Development of quarto templates (Weeks 7-14): 180 hours @ 78/hour: **12480USD**
- - Beta testing and deployment (Weeks 15-25): 220 hours @ 78/hour: **17160USD**
+ 1. Initial development of core functionality (Weeks 1-6): 120 hours @ 78USD/hour: **9360USD**
+ 2. Development of quarto templates (Weeks 7-14): 180 hours @ 78/hour: **12480USD**
+ 3. Beta testing and deployment (Weeks 15-25): 220 hours @ 78/hour: **17160USD**
 
 Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: **39000USD**
 
