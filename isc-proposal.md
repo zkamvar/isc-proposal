@@ -214,30 +214,30 @@ Support for `*.qmd` and files in The Carpentries Workbench
 
 : The Carpentries Workbench should treat any `*.qmd` files as valid input documents by default. Note that `*.ipynb` documents should first be converted to `*.qmd`.
 
-Quarto template for Carpentries-style lessons
-
-: This template will allow folks who want to create lessons without the workbench to take advantage of the styling.
-
 Documentation for non-R lessons
 
 : A Tutorial, How-to guide, Reference, and Explanation documents will help make clear the features and limitations of the quarto integration
-
-Blog Post
-
-: A blog post that summarises the feedback from our community members who maintain lessons in Python, BASH, and SQL.
 
 Unit, Integration, and Regression tests for Python, SQL, and BASH
 
 : These languages are the most commonly taught in our ecosystem and should have robust tests
 
+Blog Post
+
+: A blog post that summarises the feedback from our community members who maintain lessons in Python, BASH, and SQL.
+
 Non-invasive integration with Pyenv
 
 : Pyenv is the most common mechanism for defining requirements for a python project. We want to embed this to enable the same approach to reproducibility that we have for R lessons.
 
+Quarto template for Carpentries-style lessons
+
+: This template will allow folks who want to create lessons without the workbench to take advantage of the styling.
+
 Quarto itself will be implemented in the {sandpaper}[^sandpaper] package and the template will be implemented in {varnish}[^varnish]. 
 The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for {sandpaper}.
 
-We are assuming here that The Workbench will have wide acceptance 
+We are assuming here that The Workbench will have wide acceptance.
 
 [^sandpaper]: <https://carpentries.github.io/sandpaper>
 [^varnish]: <https://carpentries.github.io/varnish>
