@@ -321,10 +321,12 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 -->
 
 
-The Carpentries is a global community of 4,000+ trained volunteer instructors, who have taught workshops that have reached 90,000+ learners. 
+The Carpentries is a global community of 4,000+ trained volunteer instructors, who have taught workshops that have reached 90,000+ learners.
 Our workshops teach introductory computing and data analytical skills to researchers. 
 R is taught in more than half of our workshops. 
-All the lesson materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors. 
+All the lesson materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors who abide by our Code of Conduct[^coc].
+
+[^coc]: <https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html>
 
 Zhian N. Kamvar is the Lesson Infrastructure Developer for The Carpentries and an experienced R developer with 8 authored packages on CRAN spanning reproducible research, population genetics, and epidemiology.
 He is responsible for designing and creating The Carpentries Workbench.
