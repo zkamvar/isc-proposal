@@ -75,7 +75,7 @@ Who has been given the opportunity to provide feedback on the proposal? This sho
 -->
 
 Dr. Yanina Bellini Saibene---R Consortium ISC member    
-Dr. Erin Becker---Associate Director, The Carpentries.
+Dr. Erin Becker---Associate Director, The Carpentries
 
 ## Problem Statement
 

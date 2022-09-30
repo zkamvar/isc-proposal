@@ -163,14 +163,10 @@
 <li><a href="#project-team">Project team</a></li>
 <li><a href="#consulted">Consulted</a></li>
 </ul></li>
-<li><a href="#the-problem">The Problem</a>
-<ul>
 <li><a href="#problem-statement">Problem Statement</a></li>
-</ul></li>
-<li><a href="#the-proposal">The proposal</a>
+<li><a href="#the-proposal">The Proposal</a>
 <ul>
 <li><a href="#overview">Overview</a></li>
-<li><a href="#detail">Detail</a></li>
 <li><a href="#minimum-viable-product">Minimum Viable Product</a></li>
 </ul></li>
 <li><a href="#project-plan">Project plan</a>
@@ -201,19 +197,19 @@ These are notes from talking with Yanina about [my twitter thread](https://twitt
 
 lessons that are not in R can use this infrastructure <- this is a good pitch
 
-The fact that The Carpentries has high impact for larger communities. 
+The fact that The Carpentries has high impact for larger communities.
 
-Proposals like this have a good chance. 
+Proposals like this have a good chance.
 
 Try to highlight a tool for people who want to create training materials with The Carpentries philosophy
 
-lesson will have evidence-based teaching practices. 
+lesson will have evidence-based teaching practices.
 
 we are providing tools to make it easier. No expertise on GitHub Actions, Quarto, YAML needed.
 
-Highlight that The Carpentries materials are used in other places. 
+Highlight that The Carpentries materials are used in other places.
 
-> The primary purpose of the R Consortium (collectively, the “Purpose”) is to: 
+> The primary purpose of the R Consortium (collectively, the “Purpose”) is to:
 >
 >(a) advance the worldwide promotion of and support for the R open source
 >language and environment as the preferred language for statistical computing
@@ -222,19 +218,19 @@ Highlight that The Carpentries materials are used in other places.
 >(b) establish, maintain, seek support for, and develop infrastructure projects
 >and technical and infrastructure collaboration initiatives related to the
 >Environment, and such other initiatives as may be appropriate to support,
->enable and promote the Environment; 
+>enable and promote the Environment;
 >
 >(c) encourage and increase user adoption, involvement with, and contribution
->to, the Environment; 
+>to, the Environment;
 >
 >(d) facilitate communication and collaboration among users and developers of
 >the Environment, the R Consortium and the R Foundation for Statistical
->Computing (the “R Foundation”); 
+>Computing (the “R Foundation”);
 >
->(e) support and maintain policies set by the Board; and 
+>(e) support and maintain policies set by the Board; and
 >
 >(f) undertake such other activities as may from time to time be appropriate to
->further the purposes and achieve the goals set forth above.  
+>further the purposes and achieve the goals set forth above.
 >
 >In furtherance of these efforts, the R Consortium shall seek to solicit the
 >participation of all interested parties on a fair, equitable and open basis.
@@ -242,26 +238,26 @@ Highlight that The Carpentries materials are used in other places.
 
 -->
 <h2 id="signatories">Signatories</h2>
-<!-- 
-This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery. 
+<!--
+This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery.
 
 An optional section would be for R-Core signatories where changes to R are proposed.
 -->
 <h3 id="project-team">Project team</h3>
-<!-- 
+<!--
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
 <p>Dr. Zhian N. Kamvar—Lead Developer<br />
 Dr. Toby Hodges—Community Advocate<br />
 Dr. Kari L. Jordan—Supervisor</p>
 <h3 id="consulted">Consulted</h3>
-<!-- 
+<!--
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 <p>Dr. Yanina Bellini Saibene—R Consortium ISC member<br />
-Dr. Erin Becker—Associate Director, The Carpentries.</p>
-<h2 id="the-problem">The Problem</h2>
-<!-- 
+Dr. Erin Becker—Associate Director, The Carpentries</p>
+<h2 id="problem-statement">Problem Statement</h2>
+<!--
 Outlining the issue / weak point / problem to be solved by this proposal. This should be a compelling section that sets the reader up for the next section - the proposed solution!
 
 It is important to cover:
@@ -271,28 +267,26 @@ It is important to cover:
  - [ ] Have there been previous attempts to resolve the problem
  - [ ] Why it should be tackled
 -->
-<h3 id="problem-statement">Problem Statement</h3>
-<p>Of all languages, R is the most versatile when it comes to literate programming and the ability to rapidly publish results thanks to the advent of R Markdown. More importantly, unlike JSON-based formats like Jupyter notebooks, R Markdown enables <strong>reproducible collaboration</strong> under version control. Literate programming also enables the creation of maintainable and reproducible teaching materials. To host such materials, however, requires not only expertise in a domain area, it also requires knowledge of continuous deployment systems, reproducible workflows, and UI elements for the Web. Designed with our Core Values in mind, The Carpentries lesson infrastructure provides templating, guidance, and tools that allows rapid development and publishing of high-quality lesson content. The lesson contributor only needs to focus on the writing the content of the lesson in Markdown or R Markdown. With this infrastructure, we champion community collaboration and access for all.</p>
-<p>The infrastructure—called The Carpentries Workbench—is a “batteries-included” setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson. The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown followed by pandoc and {pkgdown} to render Markdown to HTML. For lessons that teach R, authoring R Markdown with a seamless integration with {renv} ensures that lessons are reproducible by default. Moreover, integration with GitHub Actions means that pull request previews can show lesson maintainers exactly where output in a lesson has changed from new contributions or package updates.</p>
-<p>Lessons that do not teach R, however, must use plain Markdown where the output of demonstrative and exercise code is copy and pasted into lessons. Copy and pasting outputs is inherently non-reproducible and makes non-R lessons difficult to maintain as the software ecosystem changes and evolves. Ultimately, these extra steps are significant burdens in a volunteer framework. These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.</p>
-<p>For context, The Carpentries teach 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry. Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the “R for Ecologists” lesson alone from June to August 2022. In addition, there are over 100 community-developed lessons on a wide range of topics in The Carpentries Incubator, 15 of which use R. This means that there are over one hundred lessons that potentially stand to benefit from literate programming.</p>
-<p>There have been attempts in The Carpentries community to enable literate programming for lessons teaching with languages other than R. Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as Intro to MRI Data in Python<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a>), which is then used as the input for the lesson. This allows the lead developers to work in a framework that offers the benefits of literate programming, but it hampers collaboration because the documentation for lesson infrastructure does not apply to this framework and people who want to contribute may attempt to edit the markdown output, when they should be contributing to the notebooks.</p>
-<p>Others, such as the Learn To Discover group<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a> have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear, and the approach does not generally extend to enable literate programming in other languages.</p>
+<p>Of all languages, R is the most versatile when it comes to literate programming and the ability to rapidly publish results thanks to the advent of R Markdown. More importantly, unlike JSON-based formats like Jupyter notebooks, R Markdown enables <strong>reproducible collaboration</strong> under version control. Literate programming also enables the creation of maintainable and reproducible teaching materials. To host such materials, however, requires not only expertise in a domain area, it also requires knowledge of continuous deployment systems, reproducible workflows, and UI elements for the Web. Designed with our Core Values in mind, The Carpentries<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> lesson infrastructure provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content. The lesson contributor only needs to focus on writing the content of the lesson in Markdown or R Markdown. With this infrastructure, we champion community collaboration and access for all.</p>
+<p>The infrastructure—called The Carpentries Workbench<a href="#fn2" class="footnote-ref" id="fnref2" role="doc-noteref"><sup>2</sup></a>—is a “batteries-included” setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson site. The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown, followed by pandoc and {pkgdown} to render Markdown to HTML. For lessons that teach R, authoring R Markdown with a seamless integration with {renv} ensures that lessons are reproducible by default. Moreover, integration with GitHub Actions means that pull request previews can show lesson maintainers exactly where output in a lesson has changed from new contributions or package updates.</p>
+<p>Lessons that do not teach R, however, must use plain Markdown where the output of demonstrative and exercise code is copy and pasted into lessons. Copy and pasting outputs is inherently non-reproducible and makes non-R lessons difficult to maintain as the software ecosystem changes and evolves. Ultimately, these extra steps are significant burdens in a volunteer framework. They result not only in lost contributions to existing lessons, but also in lessons that were never developed.</p>
+<p>For context, The Carpentries teaches 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry. Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the “R for Ecologists” lesson alone from June to August 2022. In addition, there are over 100 community-developed lessons on a wide range of topics in The Carpentries Incubator, 15 of which use R. This means that there are over one hundred lessons that potentially stand to benefit from literate programming.</p>
+<p>There have been attempts in The Carpentries community to enable literate programming for lessons teaching with languages other than R. Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to Markdown, which is then used as the input for the lesson (see <em>Intro to MRI Data in Python</em><a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> for example). This allows the lead developers to work in a framework that offers the benefits of literate programming, but it hampers collaboration because the documentation for lesson infrastructure does not apply to this framework and people who want to contribute may attempt to edit the Markdown output, when they should be contributing to the notebooks.</p>
+<p>Others, such as the <em>Learn To Discover</em> group<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear, and the approach does not generally extend to enable literate programming in other languages.</p>
 <p>In both cases, the lesson authors needed knowledge of continuous deployment, reproducible workflows, and of the underlying framework to accomplish their goals.</p>
-<p>We want our lesson infrastructure to live up to our values of people first, access for all, community collaboration, and strength through diversity. We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto<a href="#fn3" class="footnote-ref" id="fnref3" role="doc-noteref"><sup>3</sup></a> into The Carpentries Workbench. Released in July 2022, Quarto is a framework based the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.</p>
-<p>We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment. Because the Carpentries Materials are always open-source, many organisations have used and remixed our infrastructure for their own purposes. By incorporating Quarto, we will be able to increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons. This will in turn help train future generations of researchers to work reproducibly.</p>
-<h2 id="the-proposal">The proposal</h2>
+<p>We value people first, access for all, community collaboration, and strength through diversity, and we want our lesson infrastructure to reflect these values. We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a> into The Carpentries Workbench. Released in July 2022, Quarto is a framework based on the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.</p>
+<p>We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment. Because The Carpentries materials are always open-source, many organisations have used and remixed our infrastructure for their own purposes. By incorporating Quarto, we will be able to increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons. This will in turn help train future generations of researchers to work reproducibly.</p>
+<h2 id="the-proposal">The Proposal</h2>
 <!--
-This is where the proposal should be outlined. 
+This is where the proposal should be outlined.
 -->
 <h3 id="overview">Overview</h3>
 <!--
 At a high-level address what your proposal is and how it will address the problem identified. Highlight any benefits to the R Community that follow from solving the problem. This should be your most compelling section.
 -->
-<p>We will enable support for reproducible publishing of non-R languages in The Carpentries Lesson Infrastructure by integrating the Quarto publishing engine into The Carpentries Workbench. The Carpentries Workbench is an opinionated lesson publication system as a set of R packages that prioritises accessibility and sensible defaults to produce Carpentries-styled lessons. With a modular foundation, The Carpentries Workbench uses a two-step workflow that first renders R Markdown to markdown via {knitr} followed by a step that uses Pandoc to render markdown to HTML templating. Because this is a similar model used by Quarto, we propose to replace the underlying engines from {knitr} + Pandoc to Quarto in our modular foundation without affecting the superstructure.</p>
-<p>Our goal is to eliminate the barriers to contribution of lesson materials by increasing the number of langugages available. Moreover, quarto will enable development of lessons demonstrating Python to R, Julia to R, or any other multi-lingual workflow. These multi-lingual lessons can demonstrate R’s strengths in the context of another language and help promote R to people who would not have previously encountered R.</p>
-<p>By reducing barriers to contribution, more people will be empowered to create educational materials <em>based on The Carpentries philosophy</em>. These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve future problems.</p>
-<h3 id="detail">Detail</h3>
+<p>We will enable support for reproducible publishing of non-R languages in The Carpentries lesson infrastructure by integrating the Quarto publishing engine into The Carpentries Workbench. The Carpentries Workbench is an opinionated lesson publication system as a set of R packages that prioritises accessibility and sensible defaults to produce Carpentries-styled lessons. With a modular foundation, The Carpentries Workbench uses a two-step workflow that first renders R Markdown to Markdown via {knitr} followed by a step that uses Pandoc to render Markdown to HTML templating. Because this is a similar model to that used by Quarto, we propose to replace the underlying engines of {knitr} + Pandoc with Quarto in our modular foundation without affecting the superstructure.</p>
+<p>Our goal is to eliminate barriers to contribution of lesson materials by increasing the number of langugages available. Moreover, Quarto will enable development of lessons demonstrating Python to R, Julia to R, or any other multi-lingual workflow. These multi-lingual lessons can demonstrate R’s strengths in the context of another language and help promote R to people who would not have previously encountered the language.</p>
+<p>By reducing barriers to contribution, more people will be empowered to create educational materials <em>based on The Carpentries philosophy</em>. These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve problems.</p>
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.
 
@@ -300,31 +294,30 @@ Depending on project type the detail section should include:
 
  - [x] Minimum Viable Product
  - [x] Architecture
- - [ ] Assumptions
+ - [x] Assumptions
 -->
 <h3 id="minimum-viable-product">Minimum Viable Product</h3>
-<p>The minimum viable product of this project will be:</p>
 <dl>
-<dt>Support for <code>*.qmd</code> and files in The Carpentries Workbench</dt>
+<dt>Support for <code>*.qmd</code> files in The Carpentries Workbench</dt>
 <dd><p>The Carpentries Workbench should treat any <code>*.qmd</code> files as valid input documents by default. Note that <code>*.ipynb</code> documents should first be converted to <code>*.qmd</code>.</p>
 </dd>
 <dt>Documentation for non-R lessons</dt>
-<dd><p>A Tutorial, How-to guide, Reference, and Explanation documents will help make clear the features and limitations of the quarto integration</p>
+<dd><p>Tutorial, How-to guide, Reference, and Explanation documents will help make clear the features and limitations of the Quarto integration.</p>
 </dd>
-<dt>Unit, Integration, and Regression tests for Python, SQL, and BASH</dt>
-<dd><p>These languages are the most commonly taught in our ecosystem and should have robust tests</p>
+<dt>Unit, integration, and regression tests for Python, SQL, and BASH</dt>
+<dd><p>These languages are the most commonly taught in our ecosystem and should have robust tests.</p>
 </dd>
 <dt>Blog Post</dt>
 <dd><p>A blog post that summarises the feedback from our community members who maintain lessons in Python, BASH, and SQL.</p>
 </dd>
 <dt>Non-invasive integration with Pyenv</dt>
-<dd><p>Pyenv is the most common mechanism for defining requirements for a python project. We want to embed this to enable the same approach to reproducibility that we have for R lessons.</p>
+<dd><p>Pyenv is the most common mechanism for defining requirements for a Python project. We want to embed this to enable the same approach to reproducibility that we have for R lessons.</p>
 </dd>
 <dt>Quarto template for Carpentries-style lessons</dt>
-<dd><p>This template will allow folks who want to create lessons without the workbench to take advantage of the styling.</p>
+<dd><p>This template will allow folks who want to create lessons without the Workbench to take advantage of its accessible layout and styling.</p>
 </dd>
 </dl>
-<p>Quarto itself will be implemented in the {sandpaper}<a href="#fn4" class="footnote-ref" id="fnref4" role="doc-noteref"><sup>4</sup></a> package and the template will be implemented in {varnish}<a href="#fn5" class="footnote-ref" id="fnref5" role="doc-noteref"><sup>5</sup></a>. The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for {sandpaper}.</p>
+<p>The Quarto integration itself will be implemented in the {sandpaper}<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a> package and the template will be implemented in {varnish}<a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>. The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for {sandpaper}.</p>
 <p>We are assuming here that The Workbench will have wide acceptance.</p>
 <h2 id="project-plan">Project plan</h2>
 <h3 id="start-up-phase">Start-up phase</h3>
@@ -336,10 +329,10 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Licence decisions
  - [ ] Reporting framework
 -->
-<p>The startup phase will be relatively light as the components for these features will live inside of established packages. Licenses for this work will be MIT. The reporting will be done publicly via bi-monthly blog post updates to The Carpentries Blog series “The Dovetail”<a href="#fn6" class="footnote-ref" id="fnref6" role="doc-noteref"><sup>6</sup></a></p>
+<p>The startup phase will be relatively light as the components for these features will live inside of established packages. Licenses for this work will be MIT. The reporting will be done publicly via bi-monthly blog post updates to The Carpentries Blog series “The Dovetail”<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a></p>
 <h3 id="technical-delivery">Technical delivery</h3>
 <!--
-Covering the actual delivery of the project this section should provide at least a high-level the implementation. 
+Covering the actual delivery of the project this section should provide at least a high-level the implementation.
 
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
@@ -349,20 +342,20 @@ Including target dates is really important as you need to be committed and the I
 <ul>
 <li><strong>Week 1:</strong> Use tutorial-driven development to first document the typical workflow for a lesson that does not use R.</li>
 <li><strong>Weeks 2-3:</strong> Replace {knitr} with {quarto} inside of <code>sandpaper:::render_html()</code> to achieve polyglot capabilities.</li>
-<li><strong>Weeks 4-6:</strong> Harness pyenv to create non-invasive versioning system for python documents</li>
+<li><strong>Weeks 4-6:</strong> Harness pyenv to create non-invasive versioning system for Python documents.</li>
 </ul></li>
-<li>Phase 2: Development of quarto templates <strong>(8 weeks)</strong>
+<li>Phase 2: Development of Quarto templates <strong>(8 weeks)</strong>
 <ul>
-<li><strong>Weeks 7-10:</strong> Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows</li>
-<li><strong>Weeks 11-12:</strong> Create lua filters to replace XPath manipulation currently in {sandpaper}</li>
-<li><strong>Week 13:</strong> create pandoc templates <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some --></li>
-<li><strong>Week 14:</strong> update varnish and <code>sandpaper:::build_html()</code> to use quarto pandoc templates</li>
+<li><strong>Weeks 7-10:</strong> Alpha testing of local workflows with users with various levels of expertise and development of remote workflows.</li>
+<li><strong>Weeks 11-12:</strong> Create lua filters to replace XPath manipulation currently in {sandpaper}.</li>
+<li><strong>Week 13:</strong> Create pandoc templates. <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some --></li>
+<li><strong>Week 14:</strong> Update {varnish} and <code>sandpaper:::build_html()</code> to use Quarto pandoc templates.</li>
 </ul></li>
 <li>Phase 3: Beta testing, conversion, and deployment <strong>(11 weeks)</strong>
 <ul>
-<li><strong>Week 15-18:</strong> Test conversion on lesson infrastructure</li>
-<li><strong>Week 19:</strong> Release updated workbench and varnish as a quarto theme</li>
-<li><strong>Week 20-25:</strong> remove outputs from python lessons, convert to quarto, validate, and release lessons.</li>
+<li><strong>Week 15-18:</strong> Test conversion on lesson infrastructure.</li>
+<li><strong>Week 19:</strong> Release updated workbench and {varnish} as a Quarto theme.</li>
+<li><strong>Week 20-25:</strong> remove outputs from Python lessons, convert to Quarto, validate, and release lessons.</li>
 </ul></li>
 </ul>
 <h3 id="other-aspects">Other aspects</h3>
@@ -375,22 +368,22 @@ Covering non-technical activities like on-going publicity, paper preparation, di
  - [ ] UseR!
  - [ ] ISC meetings
 -->
-<p>As The Carpentries is a global community, we will continue to keep the community abreast of the updates happening with this project by using the communication channels available to us. This includes posting updates in the bi-monthly Dovetail blog post series, Carpentries Clippings, and hosting quarterly community discussions. Beyond The Carpentries community, we will be posting things we learn along the way to the rOpenSci development corner <a href="#fn7" class="footnote-ref" id="fnref7" role="doc-noteref"><sup>7</sup></a>. We aim to present the results of this work at the UseR!, SciPy, RSE, and Open Education conferences in 2023.</p>
+<p>As The Carpentries is a global community, we will continue to keep the community abreast of the updates happening with this project by using the communication channels available to us. This includes posting updates in the bi-monthly Dovetail blog post series, Carpentries Clippings, and hosting quarterly community discussions. Beyond The Carpentries community, we will be posting things we learn along the way to the rOpenSci development corner <a href="#fn9" class="footnote-ref" id="fnref9" role="doc-noteref"><sup>9</sup></a>. We aim to present the results of this work at the UseR!, SciPy, RSE, and Open Education conferences in 2023.</p>
 <h2 id="requirements">Requirements</h2>
-<!-- 
+<!--
 An idea of what is required to make the project actually happen
 -->
 <h3 id="people">People</h3>
 <!--
 Who needs to be involved, what's the proposed structure, what will it take to get their involvement?
 -->
-<p>The Carpentries is a global community of 4,000+ trained volunteer instructors, who have taught workshops that have reached 90,000+ learners. Our workshops teach introductory computing and data analytical skills to researchers. R is taught in more than half of our workshops. All the lesson materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors who abide by our Code of Conduct<a href="#fn8" class="footnote-ref" id="fnref8" role="doc-noteref"><sup>8</sup></a>.</p>
+<p>The Carpentries is a global community of 4,000+ trained volunteer Instructors, who have taught workshops that have reached 90,000+ learners. Our workshops teach introductory computing and data analytical skills to researchers. R is taught in more than half of our workshops. All the lesson materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors who abide by our Code of Conduct<a href="#fn10" class="footnote-ref" id="fnref10" role="doc-noteref"><sup>10</sup></a>.</p>
 <p>Zhian N. Kamvar is the Lesson Infrastructure Developer for The Carpentries and an experienced R developer with 8 authored packages on CRAN spanning reproducible research, population genetics, and epidemiology. He is responsible for designing and creating The Carpentries Workbench. He will lead the integration effort, blog post construction, as well as submission to conference proceedings.</p>
-<p>Toby Hodges is the Curriculum Team lead for The Carpentries and is an experienced community manager, having maintained community submissions to The Carpentries Incubator since 2020. He has designed and taught workshops that introduce The Workbench to audiences who are both experienced and new to The Carpentries. He will be responsible for developing high-level tutorials and setup documents for the new version of The Workbench that uses Quarto.</p>
+<p>Toby Hodges is the Director of Curriculum for The Carpentries and is an experienced community manager, having maintained community submissions to The Carpentries Incubator since 2020. He has designed and taught workshops that introduce the Workbench to audiences who are both experienced and new to The Carpentries. He will be responsible for developing high-level tutorials and setup documents for the new version of the Workbench that uses Quarto.</p>
 <p>Kari L. Jordan is the Executive Director for The Carpentries. She has been involved with The Carpentries since 2016 and has been responsible for directing and coordinating the execution of our strategic plan since 2020. She is the direct supervisor of Zhian N. Kamvar and will provide oversight of the project.</p>
 <h3 id="tools-tech">Tools &amp; Tech</h3>
 <!--
-What is going to be needed to deliver this project? 
+What is going to be needed to deliver this project?
 
 Will cloud computing be used - if yes are there are necessary components that will be deciding factors between providers?
 
@@ -398,44 +391,44 @@ Are there tools or tech that don't exist that will be produced to facilitate the
 -->
 <p>All tools and technology are publicly and freely available for the project. Primary development is to take place on Zhian N. Kamvar’s work computer, and continuous integration on MacOS, Windows, and Ubuntu platforms will take place on GitHub actions. Provisioning and generation of components needed for dynamic lesson content will take place on GitHub actions. Blog posts will be hosted on The Carpentries website, hosted by AWS.</p>
 <h3 id="funding">Funding</h3>
-<!-- 
+<!--
 [TO DO] THE GUIDANCE IS PRETTY UNCLEAR, ESP IN LIGHT OF GABOR'S PROPOSAL VS AWARD SIZE
 
 -->
 <p>Funding for this project will go to support Zhian N. Kamvar and Toby Hodges’ time to develop the infrastructure and documentation. This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables, with estimates for <strong>$78USD/hour</strong></p>
 <ol type="1">
 <li>Initial development of core functionality <strong>(Weeks 1-6): 120 hours, $9,360USD</strong></li>
-<li>Development of quarto templates <strong>(Weeks 7-14): 180 hours, $12,480USD</strong></li>
+<li>Development of Quarto templates <strong>(Weeks 7-14): 180 hours, $12,480USD</strong></li>
 <li>Beta testing and deployment <strong>(Weeks 15-25): 220 hours, $17,160USD</strong></li>
 </ol>
 <p>Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: <strong>$39,000USD</strong></p>
 <h2 id="success">Success</h2>
-<!-- 
-Projects should have a definition of done that is measurable, and a thorough understanding going in of what the risks are to delivery 
+<!--
+Projects should have a definition of done that is measurable, and a thorough understanding going in of what the risks are to delivery
 -->
 <h3 id="definition-of-done">Definition of done</h3>
-<!-- 
-What does success look like? 
+<!--
+What does success look like?
 -->
-<p>Success for this project will happen when our core Python lessons are able to dynamically generate plots and output. Reaching this stage means that we have successfully implemented Quarto into The Workbench and documented the new functionality. We will also have modified all Python lessons in the core curriculum of our Lesson Programs to use Quarto and shown that the maintainers of these lessons are able to comfortably work with the infrastructure.</p>
+<p>This project will have succeeeded when our core Python lessons can include dynamically generated plots and output. Reaching this stage means that we have successfully implemented Quarto into the Workbench and documented the new functionality. All Python lessons in the core curriculum of our Lesson Programs will use Quarto, and the Maintainers of these lessons will be able to comfortably work with the infrastructure.</p>
 <h3 id="measuring-success">Measuring success</h3>
-<!-- 
-How will we know when success is achieved, what markers can we use along the way 
+<!--
+How will we know when success is achieved, what markers can we use along the way
 -->
-<p>This project will be successful when:</p>
+<p>Markers of success in this project will include:</p>
 <ol type="1">
-<li>we are able to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.</li>
-<li>we have four levels of documentation: tutorial, how-to, discussion, and reference.</li>
-<li>at least one maintainer from each python lesson is able to build the lesson locally.</li>
-<li>at least one contribution to The Carpentries Incubator uses literate programming for a non-R lesson.</li>
+<li>the ability to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.</li>
+<li>creation of four levels of documentation: tutorial, how-to, discussion, and reference.</li>
+<li>at least one maintainer from each Python lesson being able to build their lesson locally.</li>
+<li>at least one lesson in The Carpentries Incubator using literate programming for a non-R lesson.</li>
 </ol>
 <h3 id="future-work">Future work</h3>
-<!-- 
+<!--
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
-<p>Future work for this would be to examine the dependency provisioning structure for the workbench and generalise it for more languages. Moreover, ports of The Workbench to other languages can help lesson developers who simply do not wish to use R as an interface.</p>
+<p>Upon completion of this project, the next step would be to examine the dependency provisioning structure for the Workbench and generalise it for more languages. Moreover, ports of the Workbench to other languages can help lesson developers who simply do not wish to use R as an interface.</p>
 <h3 id="key-risks">Key risks</h3>
-<!-- 
+<!--
 What sort of things could come up that can delay or break the project?
 
  - [ ] People
@@ -447,20 +440,23 @@ What sort of things could come up that can delay or break the project?
 <p>Some key risks that could delay the project would be:</p>
 <ul>
 <li>Significant changes to the pricing model or ethical standing of GitHub Actions, which The Carpentries uses heavily to dynamically deploy lessons. This is mitigated by ensuring that core deployment mechanisms in the R packages are agnostic to higher-level frameworks so that we can pivot to a different deploy system if needed.</li>
-<li>Lack of uptake by communities outside The Carpentries. We will mitigate this by publicising our work early on and soliciting feedback from early adopters.</li>
-<li>Staffing shortages due to unanticipated circumstances (COVID, natural disaster, etc). <!-- ZNK: yes, I know this is Too Dark Park, but I _think_ it should be addressed --> Addressing this will be taken via training core team and community members on how The Workbench works.</li>
+<li>Lack of uptake by communities outside The Carpentries. We will mitigate this by publicising our work from the start of the project, and soliciting feedback from early adopters.</li>
+<li>Staffing shortages due to unanticipated circumstances (COVID, natural disaster, etc). <!-- ZNK: yes, I know this is Too Dark Park, but I _think_ it should be addressed --> The project team will provide training on the Workbench to Carpentries core team and community members, to increase the number of people able to contribute to the project.</li>
+<li>Running arbitrary code in literate programming documents is a security risk and could pose a situation where bad actors inject malicious code into our lesson websites. This is mitigated by secruity protocols from The Workbench that leverage the principle of least privilege and regular rotation of access tokens on GitHub.</li>
 </ul>
 <section class="footnotes" role="doc-endnotes">
 <hr />
 <ol>
-<li id="fn1" role="doc-endnote"><p><a href="https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2">github: carpentries-incubator/SDC-BIDS-IntroMRI</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn2" role="doc-endnote"><p><a href="https://github.com/LearnToDiscover/Basic_Python">github: LearnToDiscover/BasicPython</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn3" role="doc-endnote"><p><a href="https://quarto.org/" class="uri">https://quarto.org/</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn4" role="doc-endnote"><p><a href="https://carpentries.github.io/sandpaper" class="uri">https://carpentries.github.io/sandpaper</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn5" role="doc-endnote"><p><a href="https://carpentries.github.io/varnish" class="uri">https://carpentries.github.io/varnish</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn6" role="doc-endnote"><p><a href="https://carpentries.org/posts-by-tags/#blog-tag-dovetail">link: blog posts tagged with “dovetail”</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn7" role="doc-endnote"><p><a href="https://ropensci.org/blog/2022/09/23/ropensci-news-digest-september-2022/#package-development-corner">link: rOpenSci news digest 2022-09</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
-<li id="fn8" role="doc-endnote"><p><a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html" class="uri">https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn1" role="doc-endnote"><p>About The Carpentries: <a href="https://carpentries.org/about" class="uri">https://carpentries.org/about</a>, Our Values: <a href="https://carpentries.org/values" class="uri">https://carpentries.org/values</a><a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn2" role="doc-endnote"><p>The Carpentries Workbench: <a href="https://carpentries.github.io/workbench" class="uri">https://carpentries.github.io/workbench</a><a href="#fnref2" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn3" role="doc-endnote"><p><a href="https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2">github: carpentries-incubator/SDC-BIDS-IntroMRI</a><a href="#fnref3" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn4" role="doc-endnote"><p><a href="https://github.com/LearnToDiscover/Basic_Python">github: LearnToDiscover/BasicPython</a><a href="#fnref4" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn5" role="doc-endnote"><p><a href="https://quarto.org/" class="uri">https://quarto.org/</a><a href="#fnref5" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn6" role="doc-endnote"><p><a href="https://carpentries.github.io/sandpaper" class="uri">https://carpentries.github.io/sandpaper</a><a href="#fnref6" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn7" role="doc-endnote"><p><a href="https://carpentries.github.io/varnish" class="uri">https://carpentries.github.io/varnish</a><a href="#fnref7" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn8" role="doc-endnote"><p><a href="https://carpentries.org/posts-by-tags/#blog-tag-dovetail">link: blog posts tagged with “dovetail”</a><a href="#fnref8" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn9" role="doc-endnote"><p><a href="https://ropensci.org/blog/2022/09/23/ropensci-news-digest-september-2022/#package-development-corner">link: rOpenSci news digest 2022-09</a><a href="#fnref9" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+<li id="fn10" role="doc-endnote"><p><a href="https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html" class="uri">https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html</a><a href="#fnref10" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
 </ol>
 </section>
 </body>
