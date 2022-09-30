@@ -1,5 +1,5 @@
 
-isc-proposal.pdf: isc-proposal.md
+isc-proposal.pdf: isc-proposal.md font_def.tex
 	pandoc -t pdf \
 		--pdf-engine=xelatex \
 		-V geometry:margin=1in \
