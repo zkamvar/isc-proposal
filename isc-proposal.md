@@ -375,8 +375,8 @@ Markers of success in this project will include:
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
-Future work for this would be to examine the dependency provisioning structure for the workbench and generalise it for more languages.
-Moreover, ports of The Workbench to other languages can help lesson developers who simply do not wish to use R as an interface.
+Upon completion of this project, the next step would be to examine the dependency provisioning structure for the Workbench and generalise it for more languages.
+Moreover, ports of the Workbench to other languages can help lesson developers who simply do not wish to use R as an interface.
 
 ### Key risks
 
@@ -395,6 +395,6 @@ Some key risks that could delay the project would be:
  - Significant changes to the pricing model or ethical standing of GitHub Actions, which The Carpentries uses heavily to dynamically deploy lessons.
    This is mitigated by ensuring that core deployment mechanisms in the R packages are agnostic to higher-level frameworks so that we can pivot to a different deploy system if needed.
  - Lack of uptake by communities outside The Carpentries.
-   We will mitigate this by publicising our work early on and soliciting feedback from early adopters.
+   We will mitigate this by publicising our work from the start of the project, and soliciting feedback from early adopters.
  - Staffing shortages due to unanticipated circumstances (COVID, natural disaster, etc). <!-- ZNK: yes, I know this is Too Dark Park, but I _think_ it should be addressed -->
-   Addressing this will be taken via training core team and community members on how The Workbench works.
+   The project team will provide training on the Workbench to Carpentries core team and community members, to increase the number of people able to contribute to the project.
