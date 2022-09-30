@@ -301,7 +301,7 @@ Zhian N. Kamvar is the Lesson Infrastructure Developer for The Carpentries and a
 He is responsible for designing and creating The Carpentries Workbench.
 He will lead the integration effort, blog post construction, as well as submission to conference proceedings.
 
-Toby Hodges is the Curriculum Team lead for The Carpentries and is an experienced community manager, having maintained community submissions to The Carpentries Incubator since 2020.
+Toby Hodges is the Director of Curriculum for The Carpentries and is an experienced community manager, having maintained community submissions to The Carpentries Incubator since 2020.
 He has designed and taught workshops that introduce the Workbench to audiences who are both experienced and new to The Carpentries.
 He will be responsible for developing high-level tutorials and setup documents for the new version of the Workbench that uses Quarto.
 
