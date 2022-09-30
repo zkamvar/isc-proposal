@@ -290,7 +290,7 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 -->
 
 
-The Carpentries is a global community of 4,000+ trained volunteer instructors, who have taught workshops that have reached 90,000+ learners.
+The Carpentries is a global community of 4,000+ trained volunteer Instructors, who have taught workshops that have reached 90,000+ learners.
 Our workshops teach introductory computing and data analytical skills to researchers.
 R is taught in more than half of our workshops.
 All the lesson materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors who abide by our Code of Conduct[^coc].
@@ -302,8 +302,8 @@ He is responsible for designing and creating The Carpentries Workbench.
 He will lead the integration effort, blog post construction, as well as submission to conference proceedings.
 
 Toby Hodges is the Curriculum Team lead for The Carpentries and is an experienced community manager, having maintained community submissions to The Carpentries Incubator since 2020.
-He has designed and taught workshops that introduce The Workbench to audiences who are both experienced and new to The Carpentries.
-He will be responsible for developing high-level tutorials and setup documents for the new version of The Workbench that uses Quarto.
+He has designed and taught workshops that introduce the Workbench to audiences who are both experienced and new to The Carpentries.
+He will be responsible for developing high-level tutorials and setup documents for the new version of the Workbench that uses Quarto.
 
 Kari L. Jordan is the Executive Director for The Carpentries.
 She has been involved with The Carpentries since 2016 and has been responsible for directing and coordinating the execution of our strategic plan since 2020.
