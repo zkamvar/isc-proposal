@@ -331,7 +331,7 @@ Blog posts will be hosted on The Carpentries website, hosted by AWS.
 -->
 
 Funding for this project will go to support Zhian N. Kamvar and Toby Hodges' time to develop the infrastructure and documentation.
-This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables, with estimates for **\$78USD/hour**. 
+This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables, with estimates for \$78USD/hour. 
 We are requesting for partial funding of the direct labor costs of this work.
 
  1. Initial development of core functionality (Weeks 1-6): 120 hours, \$9,360USD, **\$7,500USD requested**
