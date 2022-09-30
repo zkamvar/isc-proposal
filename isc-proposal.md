@@ -64,9 +64,9 @@ An optional section would be for R-Core signatories where changes to R are propo
 <!--
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
-Dr. Zhian N. Kamvar---Lead Developer    
-Dr. Toby Hodges---Community Advocate    
-Dr. Kari L. Jordan---Supervisor
+Dr. Zhian N. Kamvar (Lesson Infrastructure Developer, The Carpentries)---Lead Developer    
+Dr. Toby Hodges (Director of Curriculum, The Carpentries)---Community Advocate    
+Dr. Kari L. Jordan (Executive Director The Carpentries)---Supervisor
 
 ### Consulted
 
