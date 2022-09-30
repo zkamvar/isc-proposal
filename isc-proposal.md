@@ -110,18 +110,18 @@ Copy and pasting outputs is inherently non-reproducible and makes non-R lessons 
 Ultimately, these extra steps are significant burdens in a volunteer framework.
 They result not only in lost contributions to existing lessons, but also in lessons that were never developed.
 
-For context, The Carpentries teach 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry.
+For context, The Carpentries teaches 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry.
 Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the "R for Ecologists" lesson alone from June to August 2022.
 In addition, there are over 100 community-developed lessons on a wide range of topics in The Carpentries Incubator, 15 of which use R.
 This means that there are over one hundred lessons that potentially stand to benefit from literate programming.
 
 There have been attempts in The Carpentries community to enable literate programming for lessons teaching with languages other than R.
-Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as Intro to MRI Data in Python[^intro-mri]), which is then used as the input for the lesson.
-This allows the lead developers to work in a framework that offers the benefits of literate programming, but it hampers collaboration because the documentation for lesson infrastructure does not apply to this framework and people who want to contribute may attempt to edit the markdown output, when they should be contributing to the notebooks.
+Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to Markdown, which is then used as the input for the lesson (see _Intro to MRI Data in Python_[^intro-mri] for example).
+This allows the lead developers to work in a framework that offers the benefits of literate programming, but it hampers collaboration because the documentation for lesson infrastructure does not apply to this framework and people who want to contribute may attempt to edit the Markdown output, when they should be contributing to the notebooks.
 
 [^intro-mri]: [github: carpentries-incubator/SDC-BIDS-IntroMRI](https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2)
 
-Others, such as the Learn To Discover group[^l2d] have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear, and the approach does not generally extend to enable literate programming in other languages.
+Others, such as the _Learn To Discover_ group[^l2d] have used {reticulate} in The Carpentries Workbench to provide interoperability between R and Python. This gives the advantage that contributors are able to contribute to the lesson, but the format is not familiar or clear, and the approach does not generally extend to enable literate programming in other languages.
 
 [^l2d]: [github: LearnToDiscover/BasicPython](https://github.com/LearnToDiscover/Basic_Python)
 
