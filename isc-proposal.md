@@ -244,7 +244,7 @@ We have identified several steps to achieve our goals in roughly six months:
 - Phase 1: Initial development of core functionality **(6 weeks)**
   - **Week 1:** Use tutorial-driven development to first document the typical workflow for a lesson that does not use R.
   - **Weeks 2-3:** Replace {knitr} with {Quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities.
-  - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for python documents
+  - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for Python documents
 - Phase 2: Development of Quarto templates **(8 weeks)**
   - **Weeks 7-10:** Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows
   - **Weeks 11-12:** Create lua filters to replace XPath manipulation currently in {sandpaper}
@@ -253,7 +253,7 @@ We have identified several steps to achieve our goals in roughly six months:
 - Phase 3: Beta testing, conversion, and deployment **(11 weeks)**
   - **Week 15-18:** Test conversion on lesson infrastructure
   - **Week 19:** Release updated workbench and varnish as a Quarto theme
-  - **Week 20-25:** remove outputs from python lessons, convert to Quarto, validate, and release lessons.
+  - **Week 20-25:** remove outputs from Python lessons, convert to Quarto, validate, and release lessons.
 
 
 
@@ -366,7 +366,7 @@ This project will be successful when:
 
 1. we are able to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.
 2. we have four levels of documentation: tutorial, how-to, discussion, and reference.
-3. at least one maintainer from each python lesson is able to build the lesson locally.
+3. at least one maintainer from each Python lesson is able to build the lesson locally.
 4. at least one contribution to The Carpentries Incubator uses literate programming for a non-R lesson.
 
 ### Future work
