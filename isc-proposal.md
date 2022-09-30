@@ -127,14 +127,14 @@ Others, such as the _Learn To Discover_ group[^l2d] have used {reticulate} in Th
 
 In both cases, the lesson authors needed knowledge of continuous deployment, reproducible workflows, and of the underlying framework to accomplish their goals.
 
-We want our lesson infrastructure to live up to our values of people first, access for all, community collaboration, and strength through diversity.
+We value people first, access for all, community collaboration, and strength through diversity, and we want our lesson infrastructure to reflect these values.
 We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto[^quarto] into The Carpentries Workbench.
-Released in July 2022, Quarto is a framework based the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.
+Released in July 2022, Quarto is a framework based on the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.
 
 [^quarto]: <https://quarto.org/>
 
 We have lowered the barrier for others to access our evidence-based approach to lesson design and deployment.
-Because the Carpentries Materials are always open-source, many organisations have used and remixed our infrastructure for their own purposes.
+Because The Carpentries materials are always open-source, many organisations have used and remixed our infrastructure for their own purposes.
 By incorporating Quarto, we will be able to increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons.
 This will in turn help train future generations of researchers to work reproducibly.
 
