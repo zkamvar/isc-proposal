@@ -94,11 +94,11 @@ Of all languages, R is the most versatile when it comes to literate programming 
 More importantly, unlike JSON-based formats like Jupyter notebooks, R Markdown enables **reproducible collaboration** under version control.
 Literate programming also enables the creation of maintainable and reproducible teaching materials.
 To host such materials, however, requires not only expertise in a domain area, it also requires knowledge of continuous deployment systems, reproducible workflows, and UI elements for the Web.
-Designed with our Core Values in mind, The Carpentries[^carp] lesson infrastructure provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content.
+Designed with our Core Values in mind, The Carpentries lesson infrastructure[^carp] provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content.
 The lesson contributor only needs to focus on writing the content of the lesson in Markdown or R Markdown.
 With this infrastructure, we champion community collaboration and access for all.
 
-[^carp]: About The Carpentries: <https://carpentries.org/about>, Our Values: <https://carpentries.org/values>
+[^carp]: About US: <https://carpentries.org/about>, Our Values: <https://carpentries.org/values>, Lesson Infrastructure: <https://carpentries.github.io/workbench>
 
 The infrastructure---called The Carpentries Workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson site.
 The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown, followed by pandoc and {pkgdown} to render Markdown to HTML.
@@ -176,8 +176,6 @@ Depending on project type the detail section should include:
 -->
 
 ### Minimum Viable Product
-
-The minimum viable product of this project will be:
 
 Support for `*.qmd` files in The Carpentries Workbench
 
