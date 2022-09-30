@@ -1,5 +1,6 @@
+TARGETS: 2022-carpentries-isc-proposal.pdf index.html
 
-isc-proposal.pdf: isc-proposal.md font_def.tex
+2022-carpentries-isc-proposal.pdf: isc-proposal.md font_def.tex
 	pandoc -t pdf \
 		--pdf-engine=xelatex \
 		-V geometry:margin=1in \
