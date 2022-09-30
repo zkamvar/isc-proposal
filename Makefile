@@ -1,0 +1,18 @@
+
+isc-proposal.pdf: isc-proposal.md
+	pandoc -t pdf \
+		--pdf-engine=xelatex \
+		-V geometry:margin=1.5in \
+		--include-in-header=font_def.tex \
+		-o $@ $<
+
+isc-proposal.docx: isc-proposal.md
+	pandoc -t docx \
+		-o $@ $<
+
+index.html: isc-proposal.md
+	pandoc -t html \
+		--standalone \
+		--toc \
+		-o $@ isc-proposal.md
+
