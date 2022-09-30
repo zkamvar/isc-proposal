@@ -352,9 +352,9 @@ Projects should have a definition of done that is measurable, and a thorough und
 <!--
 What does success look like?
 -->
-Success for this project will happen when our core Python lessons are able to dynamically generate plots and output.
-Reaching this stage means that we have successfully implemented Quarto into The Workbench and documented the new functionality.
-We will also have modified all Python lessons in the core curriculum of our Lesson Programs to use Quarto and shown that the maintainers of these lessons are able to comfortably work with the infrastructure.
+This project will have succeeeded when our core Python lessons can include dynamically generated plots and output.
+Reaching this stage means that we have successfully implemented Quarto into the Workbench and documented the new functionality.
+All Python lessons in the core curriculum of our Lesson Programs will use Quarto, and the Maintainers of these lessons will be able to comfortably work with the infrastructure.
 
 ### Measuring success
 
@@ -362,12 +362,12 @@ We will also have modified all Python lessons in the core curriculum of our Less
 How will we know when success is achieved, what markers can we use along the way
 -->
 
-This project will be successful when:
+Markers of success in this project will include:
 
-1. we are able to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.
-2. we have four levels of documentation: tutorial, how-to, discussion, and reference.
-3. at least one maintainer from each Python lesson is able to build the lesson locally.
-4. at least one contribution to The Carpentries Incubator uses literate programming for a non-R lesson.
+1. the ability to port our existing official lessons that use Python to use dynamic generation of plots and output in their lessons.
+2. creation of four levels of documentation: tutorial, how-to, discussion, and reference.
+3. at least one maintainer from each Python lesson being able to build their lesson locally.
+4. at least one lesson in The Carpentries Incubator using literate programming for a non-R lesson.
 
 ### Future work
 
