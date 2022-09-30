@@ -2,7 +2,7 @@
 isc-proposal.pdf: isc-proposal.md
 	pandoc -t pdf \
 		--pdf-engine=xelatex \
-		-V geometry:margin=1.5in \
+		-V geometry:margin=1in \
 		--include-in-header=font_def.tex \
 		-o $@ $<
 
