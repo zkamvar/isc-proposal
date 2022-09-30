@@ -77,7 +77,7 @@ Who has been given the opportunity to provide feedback on the proposal? This sho
 Dr. Yanina Bellini Saibene---R Consortium ISC member    
 Dr. Erin Becker---Associate Director, The Carpentries.
 
-## The Problem
+## Problem Statement
 
 <!--
 Outlining the issue / weak point / problem to be solved by this proposal. This should be a compelling section that sets the reader up for the next section - the proposed solution!
@@ -90,15 +90,15 @@ It is important to cover:
  - [ ] Why it should be tackled
 -->
 
-### Problem Statement
-
 Of all languages, R is the most versatile when it comes to literate programming and the ability to rapidly publish results thanks to the advent of R Markdown.
 More importantly, unlike JSON-based formats like Jupyter notebooks, R Markdown enables **reproducible collaboration** under version control.
 Literate programming also enables the creation of maintainable and reproducible teaching materials.
 To host such materials, however, requires not only expertise in a domain area, it also requires knowledge of continuous deployment systems, reproducible workflows, and UI elements for the Web.
-Designed with our Core Values in mind, The Carpentries lesson infrastructure provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content.
+Designed with our Core Values in mind, The Carpentries[^carp] lesson infrastructure provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content.
 The lesson contributor only needs to focus on writing the content of the lesson in Markdown or R Markdown.
 With this infrastructure, we champion community collaboration and access for all.
+
+[^carp]: About The Carpentries: <https://carpentries.org/about>, Our Values: <https://carpentries.org/values>
 
 The infrastructure---called The Carpentries Workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson site.
 The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown, followed by pandoc and {pkgdown} to render Markdown to HTML.
@@ -398,3 +398,5 @@ Some key risks that could delay the project would be:
    We will mitigate this by publicising our work from the start of the project, and soliciting feedback from early adopters.
  - Staffing shortages due to unanticipated circumstances (COVID, natural disaster, etc). <!-- ZNK: yes, I know this is Too Dark Park, but I _think_ it should be addressed -->
    The project team will provide training on the Workbench to Carpentries core team and community members, to increase the number of people able to contribute to the project.
+ - Running arbitrary code in literate programming documents is a security risk and could pose a situation where bad actors inject malicious code into our lesson websites.
+   This is mitigated by secruity protocols from The Workbench that leverage the principle of least privilege and regular rotation of access tokens on GitHub.
