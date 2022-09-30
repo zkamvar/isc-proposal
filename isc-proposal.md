@@ -158,10 +158,10 @@ Because this is a similar model to that used by Quarto, we propose to replace th
 
 Our goal is to eliminate barriers to contribution of lesson materials by increasing the number of langugages available.
 Moreover, Quarto will enable development of lessons demonstrating Python to R, Julia to R, or any other multi-lingual workflow.
-These multi-lingual lessons can demonstrate R's strengths in the context of another language and help promote R to people who would not have previously encountered R.
+These multi-lingual lessons can demonstrate R's strengths in the context of another language and help promote R to people who would not have previously encountered the language.
 
 By reducing barriers to contribution, more people will be empowered to create educational materials _based on The Carpentries philosophy_.
-These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve future problems.
+These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve problems.
 
 ### Detail
 
