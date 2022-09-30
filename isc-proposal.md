@@ -11,19 +11,19 @@ These are notes from talking with Yanina about [my twitter thread](https://twitt
 
 lessons that are not in R can use this infrastructure <- this is a good pitch
 
-The fact that The Carpentries has high impact for larger communities. 
+The fact that The Carpentries has high impact for larger communities.
 
-Proposals like this have a good chance. 
+Proposals like this have a good chance.
 
 Try to highlight a tool for people who want to create training materials with The Carpentries philosophy
 
-lesson will have evidence-based teaching practices. 
+lesson will have evidence-based teaching practices.
 
 we are providing tools to make it easier. No expertise on GitHub Actions, Quarto, YAML needed.
 
-Highlight that The Carpentries materials are used in other places. 
+Highlight that The Carpentries materials are used in other places.
 
-> The primary purpose of the R Consortium (collectively, the “Purpose”) is to: 
+> The primary purpose of the R Consortium (collectively, the “Purpose”) is to:
 >
 >(a) advance the worldwide promotion of and support for the R open source
 >language and environment as the preferred language for statistical computing
@@ -32,19 +32,19 @@ Highlight that The Carpentries materials are used in other places.
 >(b) establish, maintain, seek support for, and develop infrastructure projects
 >and technical and infrastructure collaboration initiatives related to the
 >Environment, and such other initiatives as may be appropriate to support,
->enable and promote the Environment; 
+>enable and promote the Environment;
 >
 >(c) encourage and increase user adoption, involvement with, and contribution
->to, the Environment; 
+>to, the Environment;
 >
 >(d) facilitate communication and collaboration among users and developers of
 >the Environment, the R Consortium and the R Foundation for Statistical
->Computing (the “R Foundation”); 
+>Computing (the “R Foundation”);
 >
->(e) support and maintain policies set by the Board; and 
+>(e) support and maintain policies set by the Board; and
 >
 >(f) undertake such other activities as may from time to time be appropriate to
->further the purposes and achieve the goals set forth above.  
+>further the purposes and achieve the goals set forth above.
 >
 >In furtherance of these efforts, the R Consortium shall seek to solicit the
 >participation of all interested parties on a fair, equitable and open basis.
@@ -53,33 +53,33 @@ Highlight that The Carpentries materials are used in other places.
 -->
 ## Signatories
 
-<!-- 
-This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery. 
+<!--
+This section provides the ISC with a view of the support received from the community for a proposal. Acceptance isn't predicated on popularity but community acceptance is important.  Willingness to accept outside input is also a good marker for project delivery.
 
 An optional section would be for R-Core signatories where changes to R are proposed.
 -->
 
 ### Project team
 
-<!-- 
+<!--
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
-Dr. Zhian N. Kamvar---Lead Developer    
-Dr. Toby Hodges---Community Advocate     
-Dr. Kari L. Jordan---Supervisor    
+Dr. Zhian N. Kamvar---Lead Developer
+Dr. Toby Hodges---Community Advocate
+Dr. Kari L. Jordan---Supervisor
 
 ### Consulted
 
-<!-- 
+<!--
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-Dr. Yanina Bellini Saibene---R Consortium ISC member    
+Dr. Yanina Bellini Saibene---R Consortium ISC member
 Dr. Erin Becker---Associate Director, The Carpentries.
 
 ## The Problem
 
-<!-- 
+<!--
 Outlining the issue / weak point / problem to be solved by this proposal. This should be a compelling section that sets the reader up for the next section - the proposed solution!
 
 It is important to cover:
@@ -96,8 +96,8 @@ Of all languages, R is the most versatile when it comes to literate programming 
 More importantly, unlike JSON-based formats like Jupyter notebooks, R Markdown enables **reproducible collaboration** under version control.
 Literate programming also enables the creation of maintainable and reproducible teaching materials.
 To host such materials, however, requires not only expertise in a domain area, it also requires knowledge of continuous deployment systems, reproducible workflows, and UI elements for the Web.
-Designed with our Core Values in mind, The Carpentries lesson infrastructure provides templating, guidance, and tools that allows rapid development and publishing of high-quality lesson content.
-The lesson contributor only needs to focus on the writing the content of the lesson in Markdown or R Markdown.
+Designed with our Core Values in mind, The Carpentries lesson infrastructure provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content.
+The lesson contributor only needs to focus on writing the content of the lesson in Markdown or R Markdown.
 With this infrastructure, we champion community collaboration and access for all.
 
 The infrastructure---called The Carpentries Workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson.
@@ -110,8 +110,8 @@ Copy and pasting outputs is inherently non-reproducible and makes non-R lessons 
 Ultimately, these extra steps are significant burdens in a volunteer framework.
 These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.
 
-For context, The Carpentries teach 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry. 
-Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the "R for Ecologists" lesson alone from June to August 2022. 
+For context, The Carpentries teach 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry.
+Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the "R for Ecologists" lesson alone from June to August 2022.
 In addition, there are over 100 community-developed lessons on a wide range of topics in The Carpentries Incubator, 15 of which use R.
 This means that there are over one hundred lessons that potentially stand to benefit from literate programming.
 
@@ -127,7 +127,7 @@ Others, such as the Learn To Discover group[^l2d] have used {reticulate} in The 
 
 In both cases, the lesson authors needed knowledge of continuous deployment, reproducible workflows, and of the underlying framework to accomplish their goals.
 
-We want our lesson infrastructure to live up to our values of people first, access for all, community collaboration, and strength through diversity. 
+We want our lesson infrastructure to live up to our values of people first, access for all, community collaboration, and strength through diversity.
 We propose to eliminate the extra burdens required to contribute to non-R lessons and create opportunities to create cross-language lessons by integrating Quarto[^quarto] into The Carpentries Workbench.
 Released in July 2022, Quarto is a framework based the same principles as R Markdown that allows anyone to write their analysis in their preferred programming language and easily publish their results in a reproducible manner.
 
@@ -141,7 +141,7 @@ This will in turn help train future generations of researchers to work reproduci
 ## The proposal
 
 <!--
-This is where the proposal should be outlined. 
+This is where the proposal should be outlined.
 -->
 
 ### Overview
@@ -161,7 +161,7 @@ Moreover, quarto will enable development of lessons demonstrating Python to R, J
 These multi-lingual lessons can demonstrate R's strengths in the context of another language and help promote R to people who would not have previously encountered R.
 
 By reducing barriers to contribution, more people will be empowered to create educational materials _based on The Carpentries philosophy_.
-These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve future problems. 
+These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve future problems.
 
 ### Detail
 
@@ -203,7 +203,7 @@ Quarto template for Carpentries-style lessons
 
 : This template will allow folks who want to create lessons without the workbench to take advantage of the styling.
 
-Quarto itself will be implemented in the {sandpaper}[^sandpaper] package and the template will be implemented in {varnish}[^varnish]. 
+Quarto itself will be implemented in the {sandpaper}[^sandpaper] package and the template will be implemented in {varnish}[^varnish].
 The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for {sandpaper}.
 
 We are assuming here that The Workbench will have wide acceptance.
@@ -225,8 +225,8 @@ Covering the planning phase, this section should provide a relatively detailed p
  - [ ] Reporting framework
 -->
 
-The startup phase will be relatively light as the components for these features will live inside of established packages. 
-Licenses for this work will be MIT. 
+The startup phase will be relatively light as the components for these features will live inside of established packages.
+Licenses for this work will be MIT.
 The reporting will be done publicly via bi-monthly blog post updates to The Carpentries Blog series "The Dovetail"[^dovetail]
 
 [^dovetail]: [link: blog posts tagged with "dovetail"](https://carpentries.org/posts-by-tags/#blog-tag-dovetail)
@@ -234,7 +234,7 @@ The reporting will be done publicly via bi-monthly blog post updates to The Carp
 ### Technical delivery
 
 <!--
-Covering the actual delivery of the project this section should provide at least a high-level the implementation. 
+Covering the actual delivery of the project this section should provide at least a high-level the implementation.
 
 Including target dates is really important as you need to be committed and the ISC need to have a means of tracking delivery
 -->
@@ -242,12 +242,12 @@ Including target dates is really important as you need to be committed and the I
 We have identified several steps to achieve our goals in roughly six months:
 
 - Phase 1: Initial development of core functionality **(6 weeks)**
-  - **Week 1:** Use tutorial-driven development to first document the typical workflow for a lesson that does not use R. 
+  - **Week 1:** Use tutorial-driven development to first document the typical workflow for a lesson that does not use R.
   - **Weeks 2-3:** Replace {knitr} with {quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities.
-  - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for python documents 
+  - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for python documents
 - Phase 2: Development of quarto templates **(8 weeks)**
-  - **Weeks 7-10:** Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows 
-  - **Weeks 11-12:** Create lua filters to replace XPath manipulation currently in {sandpaper} 
+  - **Weeks 7-10:** Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows
+  - **Weeks 11-12:** Create lua filters to replace XPath manipulation currently in {sandpaper}
   - **Week 13:** create pandoc templates <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some -->
   - **Week 14:** update varnish and `sandpaper:::build_html()` to use quarto pandoc templates
 - Phase 3: Beta testing, conversion, and deployment **(11 weeks)**
@@ -270,7 +270,7 @@ Covering non-technical activities like on-going publicity, paper preparation, di
 -->
 
 As The Carpentries is a global community, we will continue to keep the community abreast of the updates happening with this project by using the communication channels available to us.
-This includes posting updates in the bi-monthly Dovetail blog post series, Carpentries Clippings, and hosting quarterly community discussions. 
+This includes posting updates in the bi-monthly Dovetail blog post series, Carpentries Clippings, and hosting quarterly community discussions.
 Beyond The Carpentries community, we will be posting things we learn along the way to the rOpenSci development corner [^pkg].
 We aim to present the results of this work at the UseR!, SciPy, RSE, and Open Education conferences in 2023.
 
@@ -279,7 +279,7 @@ We aim to present the results of this work at the UseR!, SciPy, RSE, and Open Ed
 
 ## Requirements
 
-<!-- 
+<!--
 An idea of what is required to make the project actually happen
 -->
 
@@ -291,8 +291,8 @@ Who needs to be involved, what's the proposed structure, what will it take to ge
 
 
 The Carpentries is a global community of 4,000+ trained volunteer instructors, who have taught workshops that have reached 90,000+ learners.
-Our workshops teach introductory computing and data analytical skills to researchers. 
-R is taught in more than half of our workshops. 
+Our workshops teach introductory computing and data analytical skills to researchers.
+R is taught in more than half of our workshops.
 All the lesson materials are available for free, under a Creative Commons Attribution License, and have been developed by hundreds of contributors who abide by our Code of Conduct[^coc].
 
 [^coc]: <https://docs.carpentries.org/topic_folders/policies/code-of-conduct.html>
@@ -305,14 +305,14 @@ Toby Hodges is the Curriculum Team lead for The Carpentries and is an experience
 He has designed and taught workshops that introduce The Workbench to audiences who are both experienced and new to The Carpentries.
 He will be responsible for developing high-level tutorials and setup documents for the new version of The Workbench that uses Quarto.
 
-Kari L. Jordan is the Executive Director for The Carpentries. 
+Kari L. Jordan is the Executive Director for The Carpentries.
 She has been involved with The Carpentries since 2016 and has been responsible for directing and coordinating the execution of our strategic plan since 2020.
 She is the direct supervisor of Zhian N. Kamvar and will provide oversight of the project.
 
 ### Tools & Tech
 
 <!--
-What is going to be needed to deliver this project? 
+What is going to be needed to deliver this project?
 
 Will cloud computing be used - if yes are there are necessary components that will be deciding factors between providers?
 
@@ -327,7 +327,7 @@ Blog posts will be hosted on The Carpentries website, hosted by AWS.
 
 ### Funding
 
-<!-- 
+<!--
 [TO DO] THE GUIDANCE IS PRETTY UNCLEAR, ESP IN LIGHT OF GABOR'S PROPOSAL VS AWARD SIZE
 
 -->
@@ -343,23 +343,23 @@ Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: **\$3
 
 ## Success
 
-<!-- 
-Projects should have a definition of done that is measurable, and a thorough understanding going in of what the risks are to delivery 
+<!--
+Projects should have a definition of done that is measurable, and a thorough understanding going in of what the risks are to delivery
 -->
 
 ### Definition of done
 
-<!-- 
-What does success look like? 
+<!--
+What does success look like?
 -->
-Success for this project will happen when our core Python lessons are able to dynamically generate plots and output. 
+Success for this project will happen when our core Python lessons are able to dynamically generate plots and output.
 Reaching this stage means that we have successfully implemented Quarto into The Workbench and documented the new functionality.
 We will also have modified all Python lessons in the core curriculum of our Lesson Programs to use Quarto and shown that the maintainers of these lessons are able to comfortably work with the infrastructure.
 
 ### Measuring success
 
-<!-- 
-How will we know when success is achieved, what markers can we use along the way 
+<!--
+How will we know when success is achieved, what markers can we use along the way
 -->
 
 This project will be successful when:
@@ -371,7 +371,7 @@ This project will be successful when:
 
 ### Future work
 
-<!-- 
+<!--
 How could this be extended / developed in the future by yourself and/or the community in general?
 -->
 
@@ -380,7 +380,7 @@ Moreover, ports of The Workbench to other languages can help lesson developers w
 
 ### Key risks
 
-<!-- 
+<!--
 What sort of things could come up that can delay or break the project?
 
  - [ ] People
@@ -392,11 +392,9 @@ What sort of things could come up that can delay or break the project?
 
 Some key risks that could delay the project would be:
 
- - Significant changes to the pricing model or ethical standing of GitHub Actions, which The Carpentries uses heavily to dynamically deploy lessons. 
+ - Significant changes to the pricing model or ethical standing of GitHub Actions, which The Carpentries uses heavily to dynamically deploy lessons.
    This is mitigated by ensuring that core deployment mechanisms in the R packages are agnostic to higher-level frameworks so that we can pivot to a different deploy system if needed.
  - Lack of uptake by communities outside The Carpentries.
    We will mitigate this by publicising our work early on and soliciting feedback from early adopters.
  - Staffing shortages due to unanticipated circumstances (COVID, natural disaster, etc). <!-- ZNK: yes, I know this is Too Dark Park, but I _think_ it should be addressed -->
    Addressing this will be taken via training core team and community members on how The Workbench works.
-
-
