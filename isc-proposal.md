@@ -64,8 +64,8 @@ An optional section would be for R-Core signatories where changes to R are propo
 <!--
 Who are the people responsible for actually delivering the project if the proposal gets accepted and are already signed up and rearing to go?
 -->
-Dr. Zhian N. Kamvar---Lead Developer
-Dr. Toby Hodges---Community Advocate
+Dr. Zhian N. Kamvar---Lead Developer    
+Dr. Toby Hodges---Community Advocate    
 Dr. Kari L. Jordan---Supervisor
 
 ### Consulted
@@ -74,7 +74,7 @@ Dr. Kari L. Jordan---Supervisor
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-Dr. Yanina Bellini Saibene---R Consortium ISC member
+Dr. Yanina Bellini Saibene---R Consortium ISC member    
 Dr. Erin Becker---Associate Director, The Carpentries.
 
 ## The Problem
@@ -243,7 +243,7 @@ We have identified several steps to achieve our goals in roughly six months:
 
 - Phase 1: Initial development of core functionality **(6 weeks)**
   - **Week 1:** Use tutorial-driven development to first document the typical workflow for a lesson that does not use R.
-  - **Weeks 2-3:** Replace {knitr} with {Quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities.
+  - **Weeks 2-3:** Replace {knitr} with {quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities.
   - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for Python documents.
 - Phase 2: Development of Quarto templates **(8 weeks)**
   - **Weeks 7-10:** Alpha testing of local workflows with users with various levels of expertise and development of remote workflows.
