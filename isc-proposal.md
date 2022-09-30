@@ -331,13 +331,15 @@ Blog posts will be hosted on The Carpentries website, hosted by AWS.
 -->
 
 Funding for this project will go to support Zhian N. Kamvar and Toby Hodges' time to develop the infrastructure and documentation.
-This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables, with estimates for **\$78USD/hour**
+This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables, with estimates for **\$78USD/hour**. 
+We are requesting for partial funding of the direct labor costs of this work.
 
- 1. Initial development of core functionality **(Weeks 1-6): 120 hours, \$9,360USD**
- 2. Development of Quarto templates **(Weeks 7-14): 180 hours, \$12,480USD**
- 3. Beta testing and deployment **(Weeks 15-25): 220 hours, \$17,160USD**
+ 1. Initial development of core functionality (Weeks 1-6): 120 hours, \$9,360USD, **\$7,500USD requested**
+ 2. Development of Quarto templates (Weeks 7-14): 180 hours, \$12,480USD, **\$7,5000USD requested**
+ 3. Beta testing and deployment (Weeks 15-25): 220 hours, \$17,160USD, **\$10,000USD requested**
 
-Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: **\$39,000USD**
+Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: \$39,000USD, \
+**\$25,000USD requested**
 
 ## Success
 
