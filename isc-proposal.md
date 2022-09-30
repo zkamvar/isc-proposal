@@ -201,7 +201,7 @@ Non-invasive integration with Pyenv
 
 Quarto template for Carpentries-style lessons
 
-: This template will allow folks who want to create lessons without the Workbench to take advantage of the styling.
+: This template will allow folks who want to create lessons without the Workbench to take advantage of its accessible layout and styling.
 
 Quarto itself will be implemented in the {sandpaper}[^sandpaper] package and the template will be implemented in {varnish}[^varnish].
 The tutorial, how-to guide, and explanation documents will be implemented with The Carpentries Workbench template while the reference documents will be implemented in {pkgdown} for {sandpaper}.
