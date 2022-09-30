@@ -185,11 +185,11 @@ Support for `*.qmd` files in The Carpentries Workbench
 
 Documentation for non-R lessons
 
-: Tutorial, How-to guide, Reference, and Explanation documents will help make clear the features and limitations of the Quarto integration
+: Tutorial, How-to guide, Reference, and Explanation documents will help make clear the features and limitations of the Quarto integration.
 
 Unit, integration, and regression tests for Python, SQL, and BASH
 
-: These languages are the most commonly taught in our ecosystem and should have robust tests
+: These languages are the most commonly taught in our ecosystem and should have robust tests.
 
 Blog Post
 
