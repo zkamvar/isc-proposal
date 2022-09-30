@@ -94,16 +94,18 @@ Of all languages, R is the most versatile when it comes to literate programming 
 More importantly, unlike JSON-based formats like Jupyter notebooks, R Markdown enables **reproducible collaboration** under version control.
 Literate programming also enables the creation of maintainable and reproducible teaching materials.
 To host such materials, however, requires not only expertise in a domain area, it also requires knowledge of continuous deployment systems, reproducible workflows, and UI elements for the Web.
-Designed with our Core Values in mind, The Carpentries lesson infrastructure[^carp] provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content.
+Designed with our Core Values in mind, The Carpentries[^carp] lesson infrastructure provides templating, guidance, and tools to allow rapid development and publication of high-quality lesson content.
 The lesson contributor only needs to focus on writing the content of the lesson in Markdown or R Markdown.
 With this infrastructure, we champion community collaboration and access for all.
 
-[^carp]: About US: <https://carpentries.org/about>, Our Values: <https://carpentries.org/values>, Lesson Infrastructure: <https://carpentries.github.io/workbench>
+[^carp]: About The Carpentries: <https://carpentries.org/about>, Our Values: <https://carpentries.org/values> 
 
-The infrastructure---called The Carpentries Workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson site.
+The infrastructure---called The Carpentries Workbench[^workbench]---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson site.
 The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown, followed by pandoc and {pkgdown} to render Markdown to HTML.
 For lessons that teach R, authoring R Markdown with a seamless integration with {renv} ensures that lessons are reproducible by default.
 Moreover, integration with GitHub Actions means that pull request previews can show lesson maintainers exactly where output in a lesson has changed from new contributions or package updates.
+
+[^workbench]: The Carpentries Workbench: <https://carpentries.github.io/workbench>
 
 Lessons that do not teach R, however, must use plain Markdown where the output of demonstrative and exercise code is copy and pasted into lessons.
 Copy and pasting outputs is inherently non-reproducible and makes non-R lessons difficult to maintain as the software ecosystem changes and evolves.
@@ -138,7 +140,7 @@ Because The Carpentries materials are always open-source, many organisations hav
 By incorporating Quarto, we will be able to increase the quality of non-R lessons and help strengthen the bridge between languages to enable lessons in other languages and eventually polyglot lessons.
 This will in turn help train future generations of researchers to work reproducibly.
 
-## The proposal
+## The Proposal
 
 <!--
 This is where the proposal should be outlined.
@@ -163,8 +165,6 @@ These multi-lingual lessons can demonstrate R's strengths in the context of anot
 By reducing barriers to contribution, more people will be empowered to create educational materials _based on The Carpentries philosophy_.
 These new educational materials will help to usher in a new generation of data scientists and researchers from more diverse backgrounds who will have the confidence and ability to use reproducible research practices to solve problems.
 
-### Detail
-
 <!--
 Go into more detail about the specifics of the project and it delivers against the problem.
 
@@ -172,7 +172,7 @@ Depending on project type the detail section should include:
 
  - [x] Minimum Viable Product
  - [x] Architecture
- - [ ] Assumptions
+ - [x] Assumptions
 -->
 
 ### Minimum Viable Product
