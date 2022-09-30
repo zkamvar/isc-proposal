@@ -113,7 +113,7 @@ Ultimately, these extra steps are significant burdens in a volunteer framework.
 They result not only in lost contributions to existing lessons, but also in lessons that were never developed.
 
 For context, The Carpentries teaches 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry.
-Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the "R for Ecologists" lesson alone from June to August 2022.
+Six of these lessons teach core R skills, which are widely used within and outside The Carpentries with 60,000 unique views for the "R for Ecologists" lesson alone from June to August 2022.
 In addition, there are over 100 community-developed lessons on a wide range of topics in The Carpentries Incubator, 15 of which use R.
 This means that there are over one hundred lessons that potentially stand to benefit from literate programming.
 
