@@ -1,5 +1,5 @@
 ---
-title: "Multi-language Lessons in The Carpentries Workbench"
+title: "Multi-Language Lessons in The Carpentries Workbench"
 author: 'Zhian N. Kamvar on behalf of "The Carpentries"'
 date: 2022-10-01
 ---
