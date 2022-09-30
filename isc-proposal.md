@@ -100,15 +100,15 @@ Designed with our Core Values in mind, The Carpentries lesson infrastructure pro
 The lesson contributor only needs to focus on writing the content of the lesson in Markdown or R Markdown.
 With this infrastructure, we champion community collaboration and access for all.
 
-The infrastructure---called The Carpentries Workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson.
-The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown followed by pandoc and {pkgdown} to render Markdown to HTML.
+The infrastructure---called The Carpentries Workbench---is a "batteries-included" setup for building lessons that allows anyone to take new or pre-existing Markdown or R Markdown lesson materials and create a lesson site.
+The Carpentries Workbench uses {knitr} to render R Markdown documents to Markdown, followed by pandoc and {pkgdown} to render Markdown to HTML.
 For lessons that teach R, authoring R Markdown with a seamless integration with {renv} ensures that lessons are reproducible by default.
 Moreover, integration with GitHub Actions means that pull request previews can show lesson maintainers exactly where output in a lesson has changed from new contributions or package updates.
 
 Lessons that do not teach R, however, must use plain Markdown where the output of demonstrative and exercise code is copy and pasted into lessons.
 Copy and pasting outputs is inherently non-reproducible and makes non-R lessons difficult to maintain as the software ecosystem changes and evolves.
 Ultimately, these extra steps are significant burdens in a volunteer framework.
-These burdens not only result in lost contributions to existing lessons, but also lessons that were never developed.
+They result not only in lost contributions to existing lessons, but also in lessons that were never developed.
 
 For context, The Carpentries teach 36 core lessons through its three Lesson Programs, Software, Library and Data Carpentry.
 Six of these lessons teach core R skills, but are widely used within and outside The Carpentries with 60,000 unique views for the "R for Ecologists" lesson alone from June to August 2022.
