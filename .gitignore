@@ -16,3 +16,6 @@ vignettes/*.pdf
 # File gen artefacts
 *.pdf
 *.docx
+
+# latex detritus
+*.log

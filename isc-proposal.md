@@ -1,35 +1,10 @@
-Multi-language Lessons in The Carpentries Workbench
-================
+---
+title: "Multi-language Lessons in The Carpentries Workbench"
+author: 'Zhian N. Kamvar on behalf of "The Carpentries"'
+date: 2022-10-01
+---
 
-Zhian N. Kamvar
-2022-09-22
-
--   [NOTES](#notes)
--   [Signatories](#signatories)
-    -   [Project team](#project-team)
-    -   [Contributors](#contributors)
-    -   [Consulted](#consulted)
--   [The Problem](#the-problem)
--   [The proposal](#the-proposal)
-    -   [Overview](#overview)
-    -   [Detail](#detail)
--   [Project plan](#project-plan)
-    -   [Start-up phase](#start-up-phase)
-    -   [Technical delivery](#technical-delivery)
-    -   [Other aspects](#other-aspects)
--   [Requirements](#requirements)
-    -   [People](#people)
-    -   [Processes](#processes)
-    -   [Tools & Tech](#tools--tech)
-    -   [Funding](#funding)
-    -   [Summary](#summary)
--   [Success](#success)
-    -   [Definition of done](#definition-of-done)
-    -   [Measuring success](#measuring-success)
-    -   [Future work](#future-work)
-    -   [Key risks](#key-risks)
-
-
+<!--
 ## NOTES
 
 These are notes from talking with Yanina about [my twitter thread](https://twitter.com/ZKamvar/status/1573363038669111298?s=20&t=fhQlFMOf1AuH2baVbjvsCQ)
@@ -75,7 +50,7 @@ Highlight that The Carpentries materials are used in other places.
 >participation of all interested parties on a fair, equitable and open basis.
 >*[R Consortium Bylaws, Section 1.4](https://bylaws.r-consortium.org)*
 
-
+-->
 ## Signatories
 
 <!-- 
@@ -93,20 +68,14 @@ Dr. Zhian N. Kamvar---Lead Developer
 Dr. Toby Hodges---Community Advocate     
 Dr. Kari L. Jordan---Supervisor    
 
-
-### Contributors
-
-<!-- 
-Who are the people who have actively helped with this proposal but won't necessarily be on the core project team later?
--->
-
 ### Consulted
 
 <!-- 
 Who has been given the opportunity to provide feedback on the proposal? This should include any R Consortium & ISC members who the proposal has been discussed with.
 -->
 
-Dr. Yanina Bellini Saibene---R Consortium ISC member
+Dr. Yanina Bellini Saibene---R Consortium ISC member    
+Dr. Erin Becker---Associate Director, The Carpentries.
 
 ## The Problem
 
@@ -147,7 +116,7 @@ In addition, there are over 100 community-developed lessons on a wide range of t
 This means that there are over one hundred lessons that potentially stand to benefit from literate programming.
 
 There have been attempts in The Carpentries community to enable literate programming for lessons teaching with languages other than R.
-Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as **Intro to MRI Data in Python**[^intro-mri]), which is then used as the input for the lesson.
+Some lesson authors who work with Python have created a separate folder of Jupyter notebooks and render them to markdown (such as Intro to MRI Data in Python[^intro-mri]), which is then used as the input for the lesson.
 This allows the lead developers to work in a framework that offers the benefits of literate programming, but it hampers collaboration because the documentation for lesson infrastructure does not apply to this framework and people who want to contribute may attempt to edit the markdown output, when they should be contributing to the notebooks.
 
 [^intro-mri]: [github: carpentries-incubator/SDC-BIDS-IntroMRI](https://github.com/carpentries-incubator/SDC-BIDS-IntroMRI/tree/3d9d687a7c49c6af761a9170ed7ea60f16fcc0d2)
@@ -272,19 +241,19 @@ Including target dates is really important as you need to be committed and the I
 
 We have identified several steps to achieve our goals in roughly six months:
 
-- Phase 1: Initial development of core functionality (6 weeks)
-  - Week 1: Use tutorial-driven development to first document the typical workflow for a lesson that does not use R. (1 week)
-  - Weeks 2-3: Replace {knitr} with {quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities. (2 weeks)
-  - Weeks 4-6: Harness pyenv to create non-invasive versioning system for python documents (3 weeks)
-- Phase 2: Development of quarto templates (8 weeks)
-  - Weeks 7-10: Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows (4 weeks)
-  - Weeks 11-12: Create lua filters to replace XPath manipulation currently in {sandpaper} (2 weeks)
-  - Week 13: create pandoc templates (1 week) <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some -->
-  - Week 14: update varnish and `sandpaper:::build_html()` to use quarto pandoc templates
-- Phase 3: Beta testing, conversion, and deployment (11 weeks)
-  - Week 15-18: Test conversion on lesson infrastructure
-  - Week 19: Release updated workbench and varnish as a quarto theme (1 week)
-  - Week 20-25: remove outputs from python lessons, convert to quarto, validate, and release lessons.
+- Phase 1: Initial development of core functionality **(6 weeks)**
+  - **Week 1:** Use tutorial-driven development to first document the typical workflow for a lesson that does not use R. 
+  - **Weeks 2-3:** Replace {knitr} with {quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities.
+  - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for python documents 
+- Phase 2: Development of quarto templates **(8 weeks)**
+  - **Weeks 7-10:** Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows 
+  - **Weeks 11-12:** Create lua filters to replace XPath manipulation currently in {sandpaper} 
+  - **Week 13:** create pandoc templates <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some -->
+  - **Week 14:** update varnish and `sandpaper:::build_html()` to use quarto pandoc templates
+- Phase 3: Beta testing, conversion, and deployment **(11 weeks)**
+  - **Week 15-18:** Test conversion on lesson infrastructure
+  - **Week 19:** Release updated workbench and varnish as a quarto theme
+  - **Week 20-25:** remove outputs from python lessons, convert to quarto, validate, and release lessons.
 
 
 
@@ -364,13 +333,13 @@ Blog posts will be hosted on The Carpentries website, hosted by AWS.
 -->
 
 Funding for this project will go to support Zhian N. Kamvar and Toby Hodges' time to develop the infrastructure and documentation.
-This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables:
+This project is expected to take roughly 500 hours of time to complete (25 weeks at 20 hours per week of effort), which can be divided up into tiers based on the timeline of deliverables, with estimates for **\$78USD/hour**
 
- 1. Initial development of core functionality (Weeks 1-6): 120 hours @ 78USD/hour: **9360USD**
- 2. Development of quarto templates (Weeks 7-14): 180 hours @ 78/hour: **12480USD**
- 3. Beta testing and deployment (Weeks 15-25): 220 hours @ 78/hour: **17160USD**
+ 1. Initial development of core functionality **(Weeks 1-6): 120 hours, \$9,360USD**
+ 2. Development of quarto templates **(Weeks 7-14): 180 hours, \$12,480USD**
+ 3. Beta testing and deployment **(Weeks 15-25): 220 hours, \$17,160USD**
 
-Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: **39000USD**
+Total funding needed for all deliverables (25 weeks): 500 hours @ 78/hour: **\$39,000USD**
 
 ## Success
 
