@@ -1,7 +1,11 @@
- 
 \usepackage{fontspec}
-\setmainfont{Amiri}
-
+\setmainfont{Lato} % Lato is the font we use the most
+\usepackage{titlesec}
+% This prevents the section header spacing from being ridiculously large
+% https://tex.stackexchange.com/a/53340/77699
+\titlespacing{\section}{0pt}{\parskip}{\parskip}
+\titlespacing{\subsection}{0pt}{\parskip}{\parskip}
+\titlespacing{\subsubsection}{0pt}{\parskip}{\parskip}
 %%% Local Variables:
 %%% mode: markdown
 %%% TeX-master: "missfont.log"
