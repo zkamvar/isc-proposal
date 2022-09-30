@@ -244,15 +244,15 @@ We have identified several steps to achieve our goals in roughly six months:
 - Phase 1: Initial development of core functionality **(6 weeks)**
   - **Week 1:** Use tutorial-driven development to first document the typical workflow for a lesson that does not use R.
   - **Weeks 2-3:** Replace {knitr} with {Quarto} inside of `sandpaper:::render_html()` to achieve polyglot capabilities.
-  - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for Python documents
+  - **Weeks 4-6:** Harness pyenv to create non-invasive versioning system for Python documents.
 - Phase 2: Development of Quarto templates **(8 weeks)**
-  - **Weeks 7-10:** Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows
-  - **Weeks 11-12:** Create lua filters to replace XPath manipulation currently in {sandpaper}
-  - **Week 13:** create pandoc templates <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some -->
-  - **Week 14:** update varnish and `sandpaper:::build_html()` to use Quarto pandoc templates
+  - **Weeks 7-10:** Alpha testing of local workflows with user environments with various levels of expertise and development of remote workflows.
+  - **Weeks 11-12:** Create lua filters to replace XPath manipulation currently in {sandpaper}.
+  - **Week 13:** Create pandoc templates. <!-- Extremely Milton Dammers as portrayed by Jeffrey Combs in the 1996 thriller "The Frighteners" voice: The number 13... Unlucky for some -->
+  - **Week 14:** Update varnish and `sandpaper:::build_html()` to use Quarto pandoc templates.
 - Phase 3: Beta testing, conversion, and deployment **(11 weeks)**
-  - **Week 15-18:** Test conversion on lesson infrastructure
-  - **Week 19:** Release updated workbench and varnish as a Quarto theme
+  - **Week 15-18:** Test conversion on lesson infrastructure.
+  - **Week 19:** Release updated workbench and varnish as a Quarto theme.
   - **Week 20-25:** remove outputs from Python lessons, convert to Quarto, validate, and release lessons.
 
 
